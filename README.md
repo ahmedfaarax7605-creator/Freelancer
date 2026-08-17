@@ -1,6 +1,6 @@
 # TradeCode Academy — Online Courses / E-Learning Platform
 
-A modern, premium **black/dark multi-page e-learning website** built with plain HTML, CSS and JavaScript. TradeCode Academy offers project-based courses across web development, programming, data science, databases, DevOps, UI/UX and cybersecurity.
+A modern, premium **black/dark multi-page e-learning website** built with plain HTML, CSS and JavaScript. TradeCode Academy offers **27 project-based courses across 10 categories** — web development, programming, data science, databases, DevOps, UI/UX, cybersecurity, AI & machine learning, mobile development and cloud computing.
 
 This project was rebuilt from the original single-page TradeCode Academy site into a full multi-page platform, and it continues the Git & GitHub Capstone workflow (feature branches, pull requests, issues, code review and CI).
 
@@ -92,8 +92,8 @@ No build step or server is required.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ahmedfaarax7605-creator/tradecode-academy.git
-   cd tradecode-academy
+   git clone https://github.com/ahmedfaarax7605-creator/Freelancer.git
+   cd Freelancer
    ```
 
 2. Open `index.html` in any modern browser (double-click, or drag it into a browser window).

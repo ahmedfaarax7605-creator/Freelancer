@@ -15,7 +15,10 @@
     'Database': 'Data',
     'DevOps': 'DevOps',
     'UI/UX': 'Design',
-    'Cybersecurity': 'Programming'
+    'Cybersecurity': 'Security',
+    'AI & Machine Learning': 'AI',
+    'Mobile Development': 'Mobile',
+    'Cloud Computing': 'Cloud'
   };
 
   function instructorCourses(instructorId) {
