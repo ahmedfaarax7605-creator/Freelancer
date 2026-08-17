@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the full TradeCode Academy course catalog — web development, programming, data science, databases, DevOps, UI/UX and cybersecurity. Filter, search and enroll.">
+  <title>All Courses | TradeCode Academy</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/courses.css">
+</head>
+<body data-page="courses">
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">TC</span>
+        <span>TradeCode <em style="font-style:normal;color:var(--primary)">Academy</em></span>
+      </a>
+      <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="../index.html" data-nav="home">Home</a>
+        <a href="courses.html" data-nav="courses">Courses</a>
+        <a href="instructors.html" data-nav="instructors">Instructors</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="pricing.html" data-nav="pricing">Pricing</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+        <button class="btn btn-outline btn-sm" data-modal="login">Log in</button>
+        <button class="btn btn-primary btn-sm" data-modal="register">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="sep">/</span>
+          <span>Courses</span>
+        </nav>
+        <span class="eyebrow">Course catalog</span>
+        <h1>Explore all courses</h1>
+        <p>Twelve project-based courses across seven in-demand fields. Filter by topic, search for a skill and start learning today.</p>
+      </div>
+    </section>
+
+    <!-- ============ CATALOG ============ -->
+    <section class="section catalog">
+      <div class="container">
+        <!-- Toolbar -->
+        <div class="catalog-toolbar">
+          <div class="filter-bar" id="filterBar" role="group" aria-label="Filter courses by category">
+            <button class="filter active" data-filter="All">All</button>
+            <button class="filter" data-filter="Web Development">Web Development</button>
+            <button class="filter" data-filter="Programming">Programming</button>
+            <button class="filter" data-filter="Data Science">Data Science</button>
+            <button class="filter" data-filter="Database">Database</button>
+            <button class="filter" data-filter="DevOps">DevOps</button>
+            <button class="filter" data-filter="UI/UX">UI/UX</button>
+            <button class="filter" data-filter="Cybersecurity">Cybersecurity</button>
+          </div>
+          <div class="toolbar-right">
+            <label class="search-box">
+              <span class="search-ico" aria-hidden="true">🔍</span>
+              <input type="search" id="courseSearch" placeholder="Search courses…" aria-label="Search courses">
+            </label>
+            <label class="sort-box">
+              <span class="visually-hidden">Sort courses</span>
+              <select id="sortSelect" aria-label="Sort courses">
+                <option value="popular">Most popular</option>
+                <option value="rating">Highest rated</option>
+                <option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <p class="catalog-count" id="catalogCount" role="status"></p>
+
+        <div class="course-grid" id="catalogGrid"></div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <div class="empty-ico">🔍</div>
+          <h3>No courses found</h3>
+          <p>Try a different search term or clear the filters.</p>
+          <button class="btn btn-outline" id="clearAll">Clear filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <span class="eyebrow">Not sure where to start?</span>
+          <h2>Browse by career path</h2>
+          <p>Check our instructors, learning paths and pricing — or ask us anything.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="instructors.html" class="btn btn-outline btn-large">Meet Instructors</a>
+          <a href="pricing.html" class="btn btn-primary btn-large">View Pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-mark">TC</span> TradeCode <span style="color:var(--primary)">Academy</span></a>
+        <p>Modern, project-based education for developers, designers and security professionals.</p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#faq">FAQ</a>
+        <a href="course-details.html?id=javascript-zero-to-advanced">Sample course</a>
+      </div>
+      <div class="footer-news">
+        <h4>Newsletter</h4>
+        <p>Get new courses and learning tips in your inbox. No spam.</p>
+        <form class="news-form">
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> TradeCode Academy. All rights reserved.</span>
+      <span>Learn smarter. Build better.</span>
+    </div>
+  </footer>
+
+  <!-- Auth modal (demo UI) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-logo">TC</div>
+      <h2 id="modalTitle">Create your account</h2>
+      <p id="modalText">Start your learning journey today.</p>
+      <form id="authForm">
+        <div class="field"><input type="text" id="nameField" placeholder="Full name" required></div>
+        <div class="field"><input type="email" placeholder="Email address" required></div>
+        <div class="field"><input type="password" placeholder="Password (min. 6 characters)" required minlength="6"></div>
+        <button class="btn btn-primary btn-block" type="submit" id="authSubmit">Create Account</button>
+      </form>
+      <small class="demo-note">Demo UI — connect this form to your backend/auth service.</small>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="../js/courses.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/catalog.js"></script>
+</body>
+</html>

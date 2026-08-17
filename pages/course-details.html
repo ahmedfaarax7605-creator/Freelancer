@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Course details — curriculum, outcomes, instructor and reviews. Enroll in a TradeCode Academy course today.">
+  <title>Course Details | TradeCode Academy</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/course-details.css">
+</head>
+<body data-page="courses">
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">TC</span>
+        <span>TradeCode <em style="font-style:normal;color:var(--primary)">Academy</em></span>
+      </a>
+      <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="../index.html" data-nav="home">Home</a>
+        <a href="courses.html" data-nav="courses">Courses</a>
+        <a href="instructors.html" data-nav="instructors">Instructors</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="pricing.html" data-nav="pricing">Pricing</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+        <button class="btn btn-outline btn-sm" data-modal="login">Log in</button>
+        <button class="btn btn-primary btn-sm" data-modal="register">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ COURSE HEADER ============ -->
+    <section class="page-hero course-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="sep">/</span>
+          <a href="courses.html">Courses</a>
+          <span class="sep">/</span>
+          <span id="crumbTitle">Course</span>
+        </nav>
+
+        <div class="course-hero-grid">
+          <div class="course-hero-info">
+            <div class="course-hero-badges">
+              <span class="tag" id="heroCategory">Category</span>
+              <span class="badge" id="heroLevel">Level</span>
+            </div>
+            <h1 id="heroTitle">Course title</h1>
+            <p id="heroTagline">Course tagline.</p>
+            <div class="hero-meta">
+              <span class="rating-stars" id="heroStars">★ ★ ★ ★ ★</span>
+              <span id="heroRating">4.9</span>
+              <span class="dot">·</span>
+              <span id="heroReviews">(1,200 reviews)</span>
+              <span class="dot">·</span>
+              <span id="heroStudents">2,000 students</span>
+            </div>
+            <div class="hero-instructor">
+              <span class="avatar avatar-md" id="heroAvatar">JS</span>
+              <div>
+                <small>Created by</small>
+                <a href="instructors.html" id="heroInstructor">Instructor Name</a>
+              </div>
+            </div>
+          </div>
+
+          <aside class="enroll-card card" id="enrollCard">
+            <div class="enroll-cover cover-web" id="enrollCover" role="img" aria-label="Course cover"></div>
+            <div class="enroll-body">
+              <div class="enroll-price">
+                <span class="price-old" id="oldPrice">$99</span>
+                <span class="price-now" id="newPrice">$59</span>
+              </div>
+              <button class="btn btn-primary btn-block btn-large" id="enrollBtn">Enroll Now</button>
+              <button class="btn btn-outline btn-block" id="wishlistBtn">♡ Add to Wishlist</button>
+              <ul class="enroll-includes">
+                <li>📚 <span id="includesLessons">36</span> lessons across 6 sections</li>
+                <li>⏱️ <span id="includesDuration">32 hours</span> of video</li>
+                <li>📄 Certificate of completion</li>
+                <li>💬 Community access</li>
+                <li>📱 Learn on any device</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BODY ============ -->
+    <section class="section course-body-section">
+      <div class="container course-layout">
+        <!-- Left column -->
+        <div class="course-main">
+          <!-- What you'll learn -->
+          <div class="block card" id="outcomesBlock">
+            <h2 class="block-title">What you'll learn</h2>
+            <ul class="outcomes" id="outcomesList"></ul>
+          </div>
+
+          <!-- Curriculum -->
+          <div class="block card" id="curriculumBlock">
+            <div class="block-head-row">
+              <h2 class="block-title">Course curriculum</h2>
+              <span class="badge" id="curriculumMeta">6 sections · 36 lessons</span>
+            </div>
+            <div class="curriculum" id="curriculumList"></div>
+          </div>
+
+          <!-- Requirements -->
+          <div class="block card">
+            <h2 class="block-title">Requirements</h2>
+            <ul class="requirements" id="requirementsList"></ul>
+          </div>
+
+          <!-- Description -->
+          <div class="block card">
+            <h2 class="block-title">Course description</h2>
+            <div class="description" id="courseDesc"></div>
+          </div>
+
+          <!-- Instructor -->
+          <div class="block card instructor-card" id="instructorBlock">
+            <h2 class="block-title">Your instructor</h2>
+            <div class="instructor-row">
+              <span class="avatar avatar-lg" id="instructorAvatar">JS</span>
+              <div class="instructor-main">
+                <h3 id="instructorName">Instructor</h3>
+                <p class="instructor-role" id="instructorRole">Role</p>
+                <div class="instructor-stats">
+                  <span>🎓 <b id="instructorCourses">3</b> courses</span>
+                  <span>👥 <b id="instructorStudents">12K</b> students</span>
+                  <span>⭐ <b id="instructorRating">4.9</b> rating</span>
+                </div>
+              </div>
+              <a href="instructors.html" class="btn btn-outline btn-sm">View profile</a>
+            </div>
+            <p class="instructor-bio" id="instructorBio">Bio</p>
+          </div>
+
+          <!-- Reviews -->
+          <div class="block card" id="reviewsBlock">
+            <div class="block-head-row">
+              <h2 class="block-title">Student reviews</h2>
+              <span class="badge gold">⭐ <span id="reviewAvg">4.9</span> average rating</span>
+            </div>
+            <div class="reviews" id="reviewsList"></div>
+            <div class="review-form">
+              <h3>Write a review</h3>
+              <form id="reviewForm">
+                <div class="review-form-row">
+                  <div class="field"><input type="text" placeholder="Your name" id="reviewName" required></div>
+                  <div class="field">
+                    <select id="reviewRating" aria-label="Your rating">
+                      <option value="5">★★★★★ (5)</option>
+                      <option value="4">★★★★☆ (4)</option>
+                      <option value="3">★★★☆☆ (3)</option>
+                      <option value="2">★★☆☆☆ (2)</option>
+                      <option value="1">★☆☆☆☆ (1)</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field"><textarea rows="3" placeholder="What did you think of the course?" id="reviewText" required></textarea></div>
+                <button class="btn btn-primary" type="submit">Submit review</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right sidebar -->
+        <aside class="course-side">
+          <div class="side-card card">
+            <h3>This course includes</h3>
+            <ul class="side-list">
+              <li>📹 <span>Video lessons</span></li>
+              <li>🧩 <span>Hands-on projects</span></li>
+              <li>📝 <span>Quizzes & exercises</span></li>
+              <li>📜 <span>Certificate of completion</span></li>
+              <li>💬 <span>Community discussion</span></li>
+            </ul>
+          </div>
+          <div class="side-card card">
+            <h3>Related courses</h3>
+            <div class="related-list" id="relatedList"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-mark">TC</span> TradeCode <span style="color:var(--primary)">Academy</span></a>
+        <p>Modern, project-based education for developers, designers and security professionals.</p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#faq">FAQ</a>
+        <a href="course-details.html?id=javascript-zero-to-advanced">Sample course</a>
+      </div>
+      <div class="footer-news">
+        <h4>Newsletter</h4>
+        <p>Get new courses and learning tips in your inbox. No spam.</p>
+        <form class="news-form">
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> TradeCode Academy. All rights reserved.</span>
+      <span>Learn smarter. Build better.</span>
+    </div>
+  </footer>
+
+  <!-- Auth modal (demo UI) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-logo">TC</div>
+      <h2 id="modalTitle">Create your account</h2>
+      <p id="modalText">Start your learning journey today.</p>
+      <form id="authForm">
+        <div class="field"><input type="text" id="nameField" placeholder="Full name" required></div>
+        <div class="field"><input type="email" placeholder="Email address" required></div>
+        <div class="field"><input type="password" placeholder="Password (min. 6 characters)" required minlength="6"></div>
+        <button class="btn btn-primary btn-block" type="submit" id="authSubmit">Create Account</button>
+      </form>
+      <small class="demo-note">Demo UI — connect this form to your backend/auth service.</small>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="../js/courses.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/course-details.js"></script>
+</body>
+</html>
