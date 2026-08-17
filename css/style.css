@@ -382,6 +382,9 @@ h1, h2, h3, h4 { line-height: 1.15; letter-spacing: -0.02em; font-weight: 800; }
 .cover-devops { background-image: url('../assets/images/cover-devops.svg'); }
 .cover-uiux { background-image: url('../assets/images/cover-uiux.svg'); }
 .cover-security { background-image: url('../assets/images/cover-security.svg'); }
+.cover-ai { background-image: url('../assets/images/cover-ai.svg'); }
+.cover-mobile { background-image: url('../assets/images/cover-mobile.svg'); }
+.cover-cloud { background-image: url('../assets/images/cover-cloud.svg'); }
 .course-cat { position: absolute; top: 12px; left: 12px; z-index: 1; }
 .course-level {
   position: absolute;
@@ -447,6 +450,9 @@ h1, h2, h3, h4 { line-height: 1.15; letter-spacing: -0.02em; font-weight: 800; }
 .av-devops { background: linear-gradient(135deg, #f87171, #fb7185); }
 .av-uiux { background: linear-gradient(135deg, #f472b6, #e879f9); }
 .av-security { background: linear-gradient(135deg, #34d399, #2dd4bf); }
+.av-ai { background: linear-gradient(135deg, #a78bfa, #22d3ee); }
+.av-mobile { background: linear-gradient(135deg, #60a5fa, #34d399); }
+.av-cloud { background: linear-gradient(135deg, #38bdf8, #818cf8); }
 
 /* ============================================================
    Light theme

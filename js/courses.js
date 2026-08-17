@@ -10,7 +10,10 @@ const CATEGORIES = [
   'Database',
   'DevOps',
   'UI/UX',
-  'Cybersecurity'
+  'Cybersecurity',
+  'AI & Machine Learning',
+  'Mobile Development',
+  'Cloud Computing'
 ];
 
 const INSTRUCTORS = [
@@ -34,7 +37,7 @@ const INSTRUCTORS = [
     initials: 'DC',
     gradient: 'programming',
     bio: 'David teaches programming the way he wishes he had learned it — with tiny steps, real projects and plenty of practice. He has taught 40,000+ students online.',
-    courses: 4,
+    courses: 2,
     students: 21800,
     rating: 4.8
   },
@@ -58,7 +61,7 @@ const INSTRUCTORS = [
     initials: 'SM',
     gradient: 'data',
     bio: 'Sarah works with data every day: cleaning it, analysing it and turning it into decisions. Her courses focus on practical, hands-on machine learning.',
-    courses: 3,
+    courses: 2,
     students: 15300,
     rating: 4.8
   },
@@ -82,7 +85,7 @@ const INSTRUCTORS = [
     initials: 'LN',
     gradient: 'devops',
     bio: 'Lena automates everything: deployments, infrastructure, pipelines. She teaches DevOps with a focus on tools you will actually use on the job.',
-    courses: 2,
+    courses: 5,
     students: 7400,
     rating: 4.8
   },
@@ -106,9 +109,33 @@ const INSTRUCTORS = [
     initials: 'OF',
     gradient: 'security',
     bio: 'Omar has tested the security of banks, startups and governments. He teaches ethical hacking with a strict focus on responsible, legal practice.',
-    courses: 2,
+    courses: 3,
     students: 8300,
     rating: 4.9
+  },
+  {
+    id: 'nadia-ali',
+    name: 'Nadia Ali',
+    role: 'Machine Learning Engineer',
+    specialization: 'AI & Machine Learning',
+    initials: 'NA',
+    gradient: 'ai',
+    bio: 'Nadia has shipped machine learning models used by millions of people. She teaches AI with intuition first, maths second — so concepts actually stick.',
+    courses: 2,
+    students: 6700,
+    rating: 4.9
+  },
+  {
+    id: 'marcus-lee',
+    name: 'Marcus Lee',
+    role: 'Senior Mobile Engineer',
+    specialization: 'Mobile Development',
+    initials: 'ML',
+    gradient: 'mobile',
+    bio: 'Marcus has built and shipped mobile apps with millions of downloads on iOS and Android. He teaches cross-platform development with production workflows.',
+    courses: 2,
+    students: 5800,
+    rating: 4.8
   }
 ];
 
@@ -627,6 +654,651 @@ const COURSES = [
       { name: 'Yara S.', initials: 'YS', rating: 5, date: 'June 2026', text: 'Clear, beginner-friendly and genuinely interesting. The firewall lab was a highlight.' },
       { name: 'Mark J.', initials: 'MJ', rating: 4, date: 'April 2026', text: 'Great foundation for anyone starting in security. Omar explains protocols without the jargon.' },
       { name: 'Huda Q.', initials: 'HQ', rating: 5, date: 'March 2026', text: 'I finally understand VPNs and TLS. The course is very well structured.' }
+    ]
+  },
+  {
+    id: 'react-modern-frontend',
+    title: 'React & Modern Frontend',
+    category: 'Web Development',
+    tagline: 'Create component-based interfaces with React, state, routing and APIs.',
+    desc: 'React is the most in-demand frontend skill on the market. Learn components, hooks, state management and routing by building real, interactive interfaces — then connect them to live APIs and ship a polished product.',
+    instructor: 'amira-hassan',
+    rating: 4.9,
+    reviewCount: 610,
+    students: 1430,
+    duration: '21 hours',
+    level: 'Beginner',
+    price: 45,
+    oldPrice: 69,
+    icon: '⚛',
+    gradient: 'web',
+    outcomes: [
+      'Build reusable components and compose UIs',
+      'Master hooks: state, effects and context',
+      'Manage application state with confidence',
+      'Set up routing for multi-view apps',
+      'Fetch and display data from REST APIs',
+      'Ship a production-ready React application'
+    ],
+    requirements: [
+      'Solid HTML, CSS and JavaScript basics',
+      'Comfort with ES6 syntax (our JS course covers it)',
+      'A code editor and a modern browser'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['Why React', 'Setting up with Vite', 'Your first component', 'JSX in depth'] },
+      { section: 'Fundamentals', lessons: ['Props and state', 'Conditional rendering', 'Lists and keys', 'Events in React'] },
+      { section: 'Practical Development', lessons: ['useState and useEffect', 'Custom hooks', 'Context API', 'Forms and validation'] },
+      { section: 'Building Projects', lessons: ['Project: todo app', 'Project: e-commerce catalog', 'Project: movie explorer', 'Project: dashboard UI'] },
+      { section: 'Advanced Concepts', lessons: ['React Router', 'Fetching data with async patterns', 'Performance and memoisation', 'Testing components'] },
+      { section: 'Final Project', lessons: ['Planning the product', 'Building with APIs', 'Polishing and testing', 'Deploying to production'] }
+    ],
+    reviews: [
+      { name: 'Hiba N.', initials: 'HN', rating: 5, date: 'July 2026', text: 'React finally makes sense. Amira explains hooks better than anyone I have seen.' },
+      { name: 'Omar D.', initials: 'OD', rating: 5, date: 'June 2026', text: 'The movie explorer project is fantastic — you finish with a real portfolio piece.' },
+      { name: 'Clara V.', initials: 'CV', rating: 4, date: 'May 2026', text: 'Great pace and very practical. Highly recommended for JS developers.' }
+    ]
+  },
+  {
+    id: 'html-css-responsive',
+    title: 'HTML, CSS & Responsive Design',
+    category: 'Web Development',
+    tagline: 'Master the building blocks of the web and craft layouts that work everywhere.',
+    desc: 'Every web developer starts here. Learn semantic HTML, modern CSS with Flexbox and Grid, and the responsive techniques that make sites look great on any screen — with real layouts built from scratch.',
+    instructor: 'amira-hassan',
+    rating: 4.8,
+    reviewCount: 540,
+    students: 1190,
+    duration: '14 hours',
+    level: 'Beginner',
+    price: 29,
+    oldPrice: 45,
+    icon: 'CSS',
+    gradient: 'web',
+    outcomes: [
+      'Write semantic, accessible HTML',
+      'Style with modern CSS: custom properties, Flexbox, Grid',
+      'Build responsive layouts with media queries',
+      'Craft landing pages and UI components',
+      'Use CSS animations and transitions tastefully',
+      'Ship accessible, performant pages'
+    ],
+    requirements: [
+      'A computer with a browser',
+      'No prior web experience needed',
+      'Curiosity about how websites are built'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['How the web works', 'HTML document structure', 'Your first page', 'Browser developer tools'] },
+      { section: 'Fundamentals', lessons: ['Semantic HTML elements', 'Text, links and images', 'Forms and inputs', 'CSS selectors and specificity'] },
+      { section: 'Practical Development', lessons: ['The box model', 'Flexbox layouts', 'CSS Grid layouts', 'Custom properties and themes'] },
+      { section: 'Building Projects', lessons: ['Project: portfolio page', 'Project: landing page', 'Project: product card grid', 'Project: responsive navbar'] },
+      { section: 'Advanced Concepts', lessons: ['Responsive images', 'Media queries', 'Animations and transitions', 'Accessibility basics'] },
+      { section: 'Final Project', lessons: ['Designing the page', 'Building responsively', 'Testing across devices', 'Publishing your site'] }
+    ],
+    reviews: [
+      { name: 'Sami K.', initials: 'SK', rating: 5, date: 'June 2026', text: 'Perfect introduction. I built my first real website in a weekend.' },
+      { name: 'Leila R.', initials: 'LR', rating: 4, date: 'May 2026', text: 'Clear and hands-on. The responsive sections are especially good.' },
+      { name: 'Jack P.', initials: 'JP', rating: 5, date: 'April 2026', text: 'Flexbox and Grid finally clicked. Amazing value for beginners.' }
+    ]
+  },
+  {
+    id: 'algorithms-data-structures',
+    title: 'Algorithms & Data Structures',
+    category: 'Programming',
+    tagline: 'Think like an engineer — master the fundamentals behind every interview and system.',
+    desc: 'Algorithms are the language of great engineers. Learn arrays, linked lists, trees, graphs, sorting, searching and dynamic programming with visual explanations and hands-on challenges in JavaScript and Python.',
+    instructor: 'david-chen',
+    rating: 4.8,
+    reviewCount: 520,
+    students: 980,
+    duration: '25 hours',
+    level: 'Intermediate',
+    price: 49,
+    oldPrice: 75,
+    icon: 'λ',
+    gradient: 'programming',
+    outcomes: [
+      'Analyse time and space complexity with Big O',
+      'Implement core data structures from scratch',
+      'Design algorithms for sorting and searching',
+      'Solve problems with recursion and dynamic programming',
+      'Traverse trees and graphs confidently',
+      'Tackle coding-interview problems systematically'
+    ],
+    requirements: [
+      'Working knowledge of any programming language',
+      'Comfort with loops, functions and arrays',
+      'A willingness to practice regularly'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['Why algorithms matter', 'Complexity and Big O', 'How to practice', 'Setting up your environment'] },
+      { section: 'Fundamentals', lessons: ['Arrays and strings', 'Linked lists', 'Stacks and queues', 'Hash tables'] },
+      { section: 'Practical Development', lessons: ['Recursion deep dive', 'Sorting algorithms', 'Binary search', 'Two-pointer patterns'] },
+      { section: 'Building Projects', lessons: ['Project: search engine index', 'Project: autocomplete system', 'Project: task scheduler', 'Project: pathfinder'] },
+      { section: 'Advanced Concepts', lessons: ['Trees and heaps', 'Graphs and BFS/DFS', 'Dynamic programming', 'Greedy algorithms'] },
+      { section: 'Final Project', lessons: ['Mock interview practice', 'Solving problems under time pressure', 'Reviewing trade-offs', 'Building an algorithm cheat sheet'] }
+    ],
+    reviews: [
+      { name: 'Youssef B.', initials: 'YB', rating: 5, date: 'July 2026', text: 'The visual explanations are superb. I finally understand dynamic programming.' },
+      { name: 'Mia T.', initials: 'MT', rating: 4, date: 'June 2026', text: 'Intense but incredibly rewarding. Great prep for technical interviews.' },
+      { name: 'Ahmed S.', initials: 'AS', rating: 5, date: 'May 2026', text: 'David makes hard topics approachable. Worth every hour.' }
+    ]
+  },
+  {
+    id: 'java-programming-essentials',
+    title: 'Java Programming Essentials',
+    category: 'Programming',
+    tagline: 'Learn one of the world’s most widely used languages, from syntax to OOP.',
+    desc: 'Java powers enterprise systems, Android apps and backend services worldwide. Start from zero and build a strong foundation in syntax, object-oriented programming, collections and error handling.',
+    instructor: 'karim-abdullah',
+    rating: 4.7,
+    reviewCount: 380,
+    students: 760,
+    duration: '19 hours',
+    level: 'Beginner',
+    price: 42,
+    oldPrice: 65,
+    icon: 'Jv',
+    gradient: 'programming',
+    outcomes: [
+      'Write and run Java programs with confidence',
+      'Understand classes, objects and inheritance',
+      'Use collections: lists, sets and maps',
+      'Handle exceptions and write robust code',
+      'Work with files and streams',
+      'Build a complete console application'
+    ],
+    requirements: [
+      'Basic computer skills',
+      'No programming experience required',
+      'A machine with Java 17+ (setup covered)'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['Why Java', 'Installing the JDK', 'Your first program', 'IDEs explained'] },
+      { section: 'Fundamentals', lessons: ['Variables and types', 'Operators and conditionals', 'Loops', 'Methods'] },
+      { section: 'Practical Development', lessons: ['Classes and objects', 'Inheritance and polymorphism', 'Interfaces', 'Packages'] },
+      { section: 'Building Projects', lessons: ['Project: banking system', 'Project: inventory manager', 'Project: contact book', 'Project: quiz engine'] },
+      { section: 'Advanced Concepts', lessons: ['Collections framework', 'Exception handling', 'Files and streams', 'Generics'] },
+      { section: 'Final Project', lessons: ['Designing the application', 'Building with OOP principles', 'Testing and debugging', 'Polishing and documentation'] }
+    ],
+    reviews: [
+      { name: 'Iman F.', initials: 'IF', rating: 5, date: 'June 2026', text: 'Clear, structured and practical. Java finally feels approachable.' },
+      { name: 'Tariq M.', initials: 'TM', rating: 4, date: 'May 2026', text: 'Great for beginners. The banking project teaches real OOP thinking.' },
+      { name: 'Elena P.', initials: 'EP', rating: 4, date: 'April 2026', text: 'Solid course with excellent exercises. A bit fast in the collections section.' }
+    ]
+  },
+  {
+    id: 'python-data-analysis',
+    title: 'Python for Data Analysis',
+    category: 'Data Science',
+    tagline: 'Clean, explore and visualise real datasets with pandas and matplotlib.',
+    desc: 'Data analysis is the most practical data skill there is. Learn to load messy data, clean it, explore it and tell its story with charts — using the same pandas and matplotlib workflow professionals use daily.',
+    instructor: 'sarah-mitchell',
+    rating: 4.8,
+    reviewCount: 460,
+    students: 890,
+    duration: '16 hours',
+    level: 'Beginner',
+    price: 45,
+    oldPrice: 69,
+    icon: 'Pd',
+    gradient: 'data',
+    outcomes: [
+      'Load data from CSV, Excel and JSON',
+      'Clean and transform data with pandas',
+      'Filter, group and aggregate datasets',
+      'Create publication-ready charts with matplotlib',
+      'Answer business questions with data',
+      'Export and present your findings'
+    ],
+    requirements: [
+      'Basic Python knowledge (our Python course covers it)',
+      'A computer with Python 3.9+ installed',
+      'Interest in working with real data'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['The data analysis workflow', 'Jupyter notebooks', 'Installing pandas and matplotlib', 'Meet your first dataset'] },
+      { section: 'Fundamentals', lessons: ['pandas Series and DataFrames', 'Reading data files', 'Selecting and filtering', 'Handling missing values'] },
+      { section: 'Practical Development', lessons: ['Grouping and aggregation', 'Merging datasets', 'Pivot tables', 'Working with dates'] },
+      { section: 'Building Projects', lessons: ['Project: sales analysis', 'Project: customer survey', 'Project: web traffic report', 'Project: movie ratings deep dive'] },
+      { section: 'Advanced Concepts', lessons: ['Data visualisation best practices', 'Charts with matplotlib', 'Statistical summaries', 'Storytelling with data'] },
+      { section: 'Final Project', lessons: ['Choosing a real dataset', 'Analysis pipeline', 'Building the report', 'Presenting insights'] }
+    ],
+    reviews: [
+      { name: 'Nour H.', initials: 'NH', rating: 5, date: 'June 2026', text: 'I went from raw CSV to a beautiful report in two weeks. Sarah is an excellent teacher.' },
+      { name: 'Ben W.', initials: 'BW', rating: 4, date: 'May 2026', text: 'Practical and well-paced. The sales analysis project is great practice.' },
+      { name: 'Rasha A.', initials: 'RA', rating: 5, date: 'April 2026', text: 'Exactly the workflow I needed for my job. Highly recommended.' }
+    ]
+  },
+  {
+    id: 'mongodb-nosql',
+    title: 'MongoDB & NoSQL Databases',
+    category: 'Database',
+    tagline: 'Design document databases and query them like a pro.',
+    desc: 'Not every problem fits a relational table. Learn when NoSQL makes sense, how to model data in MongoDB, write powerful aggregation queries and run MongoDB confidently in production.',
+    instructor: 'james-carter',
+    rating: 4.8,
+    reviewCount: 390,
+    students: 720,
+    duration: '15 hours',
+    level: 'Intermediate',
+    price: 44,
+    oldPrice: 68,
+    icon: 'No',
+    gradient: 'database',
+    outcomes: [
+      'Understand when to choose NoSQL vs SQL',
+      'Model document data effectively',
+      'Write CRUD operations and complex queries',
+      'Use the aggregation pipeline for analytics',
+      'Design indexes for performance',
+      'Secure and operate a MongoDB deployment'
+    ],
+    requirements: [
+      'Basic database concepts (our SQL course is a great start)',
+      'Comfort with the command line',
+      'A computer with 4GB RAM or more'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['SQL vs NoSQL', 'Installing MongoDB', 'The document model', 'MongoDB Shell basics'] },
+      { section: 'Fundamentals', lessons: ['Inserting documents', 'Querying with filters', 'Updating and deleting', 'Sorting and limiting'] },
+      { section: 'Practical Development', lessons: ['Schema design patterns', 'Embedding vs referencing', 'Indexes and performance', 'Transactions in MongoDB'] },
+      { section: 'Building Projects', lessons: ['Project: e-commerce catalog', 'Project: social feed', 'Project: analytics pipeline', 'Project: geospatial store locator'] },
+      { section: 'Advanced Concepts', lessons: ['Aggregation framework', 'Text search', 'Replication and sharding', 'Backup and security'] },
+      { section: 'Final Project', lessons: ['Designing the data model', 'Building queries end to end', 'Optimising performance', 'Documenting the design'] }
+    ],
+    reviews: [
+      { name: 'Adam G.', initials: 'AG', rating: 5, date: 'June 2026', text: 'The aggregation pipeline section alone is worth the course. Superb explanations.' },
+      { name: 'Farah Z.', initials: 'FZ', rating: 4, date: 'May 2026', text: 'Great bridge between relational and document thinking. Very practical.' },
+      { name: 'Kenji T.', initials: 'KT', rating: 5, date: 'March 2026', text: 'I shipped a MongoDB-backed app right after finishing. Excellent course.' }
+    ]
+  },
+  {
+    id: 'linux-bash-devops',
+    title: 'Linux & Bash for DevOps',
+    category: 'DevOps',
+    tagline: 'Command the terminal — the foundation of every modern infrastructure role.',
+    desc: 'Linux powers the cloud. Master the command line, file system, permissions, processes, shell scripting and automation — the essential toolkit for DevOps, cloud and backend work.',
+    instructor: 'lena-novak',
+    rating: 4.8,
+    reviewCount: 430,
+    students: 840,
+    duration: '16 hours',
+    level: 'Beginner',
+    price: 38,
+    oldPrice: 58,
+    icon: '⌘',
+    gradient: 'devops',
+    outcomes: [
+      'Navigate the Linux file system with confidence',
+      'Manage files, users and permissions',
+      'Monitor processes and system resources',
+      'Write reusable Bash scripts',
+      'Automate tasks with cron and shell tools',
+      'Administer a remote Linux server securely'
+    ],
+    requirements: [
+      'Basic computer skills',
+      'No Linux experience required',
+      'A machine or VM with Linux (guide included)'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['Why Linux matters', 'Setting up your environment', 'The terminal and shell', 'First commands'] },
+      { section: 'Fundamentals', lessons: ['File system navigation', 'Working with files', 'Text processing tools', 'Permissions and users'] },
+      { section: 'Practical Development', lessons: ['Processes and jobs', 'Environment variables', 'Package management', 'Networking basics'] },
+      { section: 'Building Projects', lessons: ['Project: server setup', 'Project: log analysis script', 'Project: backup automation', 'Project: monitoring dashboard'] },
+      { section: 'Advanced Concepts', lessons: ['Bash scripting deep dive', 'Cron and scheduling', 'SSH and remote access', 'Security hardening'] },
+      { section: 'Final Project', lessons: ['Planning the automation', 'Building the script suite', 'Testing and error handling', 'Documenting your setup'] }
+    ],
+    reviews: [
+      { name: 'Pavel S.', initials: 'PS', rating: 5, date: 'June 2026', text: 'I was afraid of the terminal. Now I automate my whole workflow with scripts.' },
+      { name: 'Dina K.', initials: 'DK', rating: 4, date: 'May 2026', text: 'Clear, practical and full of real commands you actually use. Great foundation.' },
+      { name: 'Max R.', initials: 'MR', rating: 5, date: 'April 2026', text: 'The backup automation project is exactly the kind of skill employers want.' }
+    ]
+  },
+  {
+    id: 'design-systems-advanced-ui',
+    title: 'Design Systems & Advanced UI',
+    category: 'UI/UX',
+    tagline: 'Scale your design work with tokens, components and documentation.',
+    desc: 'Great products are built on systems. Learn to create design tokens, reusable component libraries and living documentation that keep design consistent across teams and products — the advanced skills senior designers use daily.',
+    instructor: 'sofia-reyes',
+    rating: 4.8,
+    reviewCount: 410,
+    students: 760,
+    duration: '17 hours',
+    level: 'Intermediate',
+    price: 41,
+    oldPrice: 62,
+    icon: '▣',
+    gradient: 'uiux',
+    outcomes: [
+      'Create and maintain design tokens',
+      'Architect reusable component libraries',
+      'Define typography, colour and spacing scales',
+      'Document components for teams and developers',
+      'Govern design consistency across products',
+      'Audit and evolve an existing design system'
+    ],
+    requirements: [
+      'Experience with a design tool (Figma or similar)',
+      'Basic UI/UX knowledge (our UI/UX course covers it)',
+      'Interest in working on product teams'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['What is a design system?', 'Systems vs style guides', 'The anatomy of a design system', 'Team and tooling setup'] },
+      { section: 'Fundamentals', lessons: ['Design tokens', 'Colour systems', 'Typography scales', 'Spacing and layout'] },
+      { section: 'Practical Development', lessons: ['Component architecture', 'Variants and states', 'Accessibility baked in', 'Documentation patterns'] },
+      { section: 'Building Projects', lessons: ['Project: button library', 'Project: form system', 'Project: data table kit', 'Project: full component library'] },
+      { section: 'Advanced Concepts', lessons: ['Versioning and releases', 'Governance and contribution', 'Design tokens in code', 'Auditing existing products'] },
+      { section: 'Final Project', lessons: ['Designing the system', 'Building and documenting', 'Testing with developers', 'Presenting the system'] }
+    ],
+    reviews: [
+      { name: 'Vera L.', initials: 'VL', rating: 5, date: 'June 2026', text: 'This changed how I design. Everything is faster and far more consistent now.' },
+      { name: 'Omar J.', initials: 'OJ', rating: 4, date: 'May 2026', text: 'Comprehensive and practical. The developer collaboration sections are gold.' },
+      { name: 'Sara M.', initials: 'SM', rating: 5, date: 'April 2026', text: 'I built a design system for my company using this course. Worth every minute.' }
+    ]
+  },
+  {
+    id: 'web-application-security',
+    title: 'Web Application Security',
+    category: 'Cybersecurity',
+    tagline: 'Find and fix the vulnerabilities that matter in real web apps.',
+    desc: 'OWASP Top 10, but hands-on. Learn how web applications get attacked — injection, broken auth, XSS, SSRF and more — and how to defend them, with a legal practice lab at every step.',
+    instructor: 'omar-farah',
+    rating: 4.9,
+    reviewCount: 450,
+    students: 870,
+    duration: '20 hours',
+    level: 'Intermediate',
+    price: 52,
+    oldPrice: 79,
+    icon: 'WEB',
+    gradient: 'security',
+    outcomes: [
+      'Understand the OWASP Top 10 vulnerabilities',
+      'Exploit common web flaws in a safe lab',
+      'Fix vulnerabilities with secure coding practices',
+      'Harden authentication and session management',
+      'Use security testing tools effectively',
+      'Write a professional security assessment report'
+    ],
+    requirements: [
+      'Basic web development knowledge',
+      'Some Linux and terminal familiarity',
+      'Commitment to ethical, legal practice only'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['How web apps get hacked', 'Setting up the lab', 'HTTP and the attack surface', 'The OWASP Top 10'] },
+      { section: 'Fundamentals', lessons: ['SQL injection', 'Cross-site scripting (XSS)', 'Broken authentication', 'CSRF attacks'] },
+      { section: 'Practical Development', lessons: ['SSRF and IDOR', 'File upload attacks', 'Security headers', 'Secure coding practices'] },
+      { section: 'Building Projects', lessons: ['Project: vulnerable app assessment', 'Project: auth bypass chain', 'Project: API security test', 'Project: fix and re-test'] },
+      { section: 'Advanced Concepts', lessons: ['Session and cookie security', 'Rate limiting and abuse', 'Web application firewalls', 'Security automation'] },
+      { section: 'Final Project', lessons: ['Full application assessment', 'Writing the report', 'Remediation plan', 'Presenting findings'] }
+    ],
+    reviews: [
+      { name: 'Jana H.', initials: 'JH', rating: 5, date: 'June 2026', text: 'Hands-on from the first lesson. I found and fixed real bugs in our app immediately.' },
+      { name: 'Rami E.', initials: 'RE', rating: 5, date: 'May 2026', text: 'Omar keeps everything ethical and legal, which I really appreciate. Superb course.' },
+      { name: 'Tom B.', initials: 'TB', rating: 4, date: 'April 2026', text: 'Intense but practical. The assessment report template is a career asset.' }
+    ]
+  },
+  {
+    id: 'ai-machine-learning-basics',
+    title: 'AI & Machine Learning Basics',
+    category: 'AI & Machine Learning',
+    tagline: 'Understand machine learning concepts and build your first intelligent models.',
+    desc: 'AI is reshaping every industry. Learn what machine learning really is, how models learn from data, and build your first classifiers and predictors with scikit-learn — intuition first, maths when you need it.',
+    instructor: 'nadia-ali',
+    rating: 4.9,
+    reviewCount: 520,
+    students: 1050,
+    duration: '22 hours',
+    level: 'Beginner',
+    price: 55,
+    oldPrice: 85,
+    icon: '🤖',
+    gradient: 'ai',
+    outcomes: [
+      'Explain core ML concepts in plain language',
+      'Prepare data for machine learning',
+      'Train classification and regression models',
+      'Evaluate models and avoid overfitting',
+      'Understand the AI landscape: ML, DL and generative AI',
+      'Build a complete ML pipeline from data to model'
+    ],
+    requirements: [
+      'Basic Python knowledge (our Python course covers it)',
+      'Comfort with high-school level maths',
+      'A computer capable of running notebooks'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['What is machine learning?', 'AI vs ML vs deep learning', 'How models learn', 'Setting up your environment'] },
+      { section: 'Fundamentals', lessons: ['Data and features', 'Training and test splits', 'Bias and variance', 'Evaluation metrics'] },
+      { section: 'Practical Development', lessons: ['Linear models', 'Decision trees', 'Random forests', 'K-nearest neighbours'] },
+      { section: 'Building Projects', lessons: ['Project: spam detector', 'Project: house price predictor', 'Project: customer classifier', 'Project: image recogniser'] },
+      { section: 'Advanced Concepts', lessons: ['Overfitting and regularisation', 'Feature engineering', 'Model tuning', 'The AI landscape today'] },
+      { section: 'Final Project', lessons: ['Choosing a problem', 'Building the pipeline', 'Evaluating results', 'Presenting your model'] }
+    ],
+    reviews: [
+      { name: 'Lina W.', initials: 'LW', rating: 5, date: 'July 2026', text: 'The clearest ML introduction I have found. Nadia explains intuition before maths.' },
+      { name: 'Omar A.', initials: 'OA', rating: 5, date: 'June 2026', text: 'I built my first working model in week one. Fantastic hands-on course.' },
+      { name: 'Sofia G.', initials: 'SG', rating: 4, date: 'May 2026', text: 'Excellent for beginners. The projects make everything concrete.' }
+    ]
+  },
+  {
+    id: 'generative-ai-developers',
+    title: 'Generative AI for Developers',
+    category: 'AI & Machine Learning',
+    tagline: 'Build real products with LLMs — prompts, embeddings, agents and guardrails.',
+    desc: 'Generative AI is a developer superpower. Learn how large language models work, master prompt engineering, build retrieval-augmented apps with embeddings, and design AI agents that actually help users.',
+    instructor: 'nadia-ali',
+    rating: 4.9,
+    reviewCount: 610,
+    students: 1240,
+    duration: '18 hours',
+    level: 'Intermediate',
+    price: 49,
+    oldPrice: 75,
+    icon: '✦',
+    gradient: 'ai',
+    outcomes: [
+      'Understand how LLMs work under the hood',
+      'Engineer prompts for reliable outputs',
+      'Build retrieval-augmented generation (RAG) apps',
+      'Use embeddings and vector search',
+      'Design AI agents with tools and memory',
+      'Apply guardrails for safety and cost'
+    ],
+    requirements: [
+      'Solid programming skills (Python preferred)',
+      'Basic understanding of APIs',
+      'An API key for an LLM provider (free tiers available)'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['The generative AI landscape', 'How LLMs work', 'Tokens, context and temperature', 'Setting up API access'] },
+      { section: 'Fundamentals', lessons: ['Prompt design patterns', 'Structured outputs', 'Handling long contexts', 'Evaluating model output'] },
+      { section: 'Practical Development', lessons: ['Embeddings explained', 'Vector databases', 'Building a RAG pipeline', 'Chunking strategies'] },
+      { section: 'Building Projects', lessons: ['Project: chat assistant', 'Project: document QA bot', 'Project: code review copilot', 'Project: AI search engine'] },
+      { section: 'Advanced Concepts', lessons: ['AI agents and tools', 'Memory and state', 'Guardrails and safety', 'Cost and latency optimisation'] },
+      { section: 'Final Project', lessons: ['Designing the product', 'Building with RAG and agents', 'Testing and hardening', 'Shipping and monitoring'] }
+    ],
+    reviews: [
+      { name: 'Chris M.', initials: 'CM', rating: 5, date: 'July 2026', text: 'RAG finally made sense. I shipped an internal document bot for my team.' },
+      { name: 'Hana Y.', initials: 'HY', rating: 5, date: 'June 2026', text: 'Practical, current and deeply useful. The agents section is ahead of most courses.' },
+      { name: 'Diego R.', initials: 'DR', rating: 4, date: 'May 2026', text: 'Excellent course. Would love a deeper section on fine-tuning.' }
+    ]
+  },
+  {
+    id: 'react-native-mobile-apps',
+    title: 'React Native: Build Mobile Apps',
+    category: 'Mobile Development',
+    tagline: 'Ship real iOS and Android apps with one JavaScript codebase.',
+    desc: 'One codebase, two platforms. Learn React Native from setup to store — components, navigation, state, native modules and device features — and build polished apps that feel native on both iOS and Android.',
+    instructor: 'marcus-lee',
+    rating: 4.8,
+    reviewCount: 470,
+    students: 920,
+    duration: '24 hours',
+    level: 'Intermediate',
+    price: 54,
+    oldPrice: 82,
+    icon: '📱',
+    gradient: 'mobile',
+    outcomes: [
+      'Set up a React Native project for both platforms',
+      'Build mobile UIs with React components',
+      'Manage navigation between screens',
+      'Handle state, storage and network data',
+      'Use device features: camera, location, push',
+      'Test and ship to app stores'
+    ],
+    requirements: [
+      'Solid React and JavaScript knowledge',
+      'Comfort with modern ES6+ syntax',
+      'A machine with 8GB RAM (Android emulator optional)'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['Why React Native', 'Setting up the environment', 'Your first screen', 'Running on devices'] },
+      { section: 'Fundamentals', lessons: ['Core components', 'Styles and layout', 'Handling input', 'Lists and FlatList'] },
+      { section: 'Practical Development', lessons: ['React Navigation', 'State management', 'Async storage', 'Fetching from APIs'] },
+      { section: 'Building Projects', lessons: ['Project: weather app', 'Project: habit tracker', 'Project: chat interface', 'Project: shopping app'] },
+      { section: 'Advanced Concepts', lessons: ['Device features', 'Push notifications', 'Performance optimisation', 'Testing with Jest'] },
+      { section: 'Final Project', lessons: ['Designing the app', 'Building end to end', 'Polishing and testing', 'Preparing for release'] }
+    ],
+    reviews: [
+      { name: 'Aya N.', initials: 'AN', rating: 5, date: 'June 2026', text: 'I shipped my first app to both stores. Marcus covers everything you actually need.' },
+      { name: 'Julian F.', initials: 'JF', rating: 4, date: 'May 2026', text: 'Excellent structure. The navigation section is worth the price alone.' },
+      { name: 'Khalid M.', initials: 'KM', rating: 5, date: 'April 2026', text: 'Practical and current. Building a real app made everything click.' }
+    ]
+  },
+  {
+    id: 'flutter-for-beginners',
+    title: 'Flutter for Beginners',
+    category: 'Mobile Development',
+    tagline: 'Build beautiful cross-platform apps with Dart and Flutter.',
+    desc: 'Flutter builds stunning native apps from a single codebase. Start from zero — install Flutter, learn Dart, compose widgets and ship your first app for iOS, Android and the web.',
+    instructor: 'marcus-lee',
+    rating: 4.7,
+    reviewCount: 360,
+    students: 700,
+    duration: '20 hours',
+    level: 'Beginner',
+    price: 44,
+    oldPrice: 66,
+    icon: 'Fl',
+    gradient: 'mobile',
+    outcomes: [
+      'Install Flutter and set up your toolchain',
+      'Learn Dart: types, functions and classes',
+      'Compose UIs with Flutter widgets',
+      'Manage state and navigation',
+      'Work with data and APIs',
+      'Build and test a complete mobile app'
+    ],
+    requirements: [
+      'Basic programming knowledge',
+      'No mobile experience required',
+      'A computer with 8GB RAM recommended'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['Why Flutter', 'Installing Flutter', 'Dart basics', 'Your first widget'] },
+      { section: 'Fundamentals', lessons: ['Dart types and functions', 'Classes and objects', 'Widgets and layout', 'Handling input'] },
+      { section: 'Practical Development', lessons: ['Stateful widgets', 'Navigation and routes', 'Lists and grids', 'Theming and styling'] },
+      { section: 'Building Projects', lessons: ['Project: calculator app', 'Project: notes app', 'Project: weather app', 'Project: quiz app'] },
+      { section: 'Advanced Concepts', lessons: ['State management', 'Fetching data', 'Local storage', 'Testing widgets'] },
+      { section: 'Final Project', lessons: ['Designing the app', 'Building and polishing', 'Testing on devices', 'Publishing basics'] }
+    ],
+    reviews: [
+      { name: 'Mariam K.', initials: 'MK', rating: 5, date: 'May 2026', text: 'Perfect for beginners. I built a beautiful app in three weeks.' },
+      { name: 'Leo D.', initials: 'LD', rating: 4, date: 'April 2026', text: 'Clear and fun. Flutter is amazing and this course proves it.' },
+      { name: 'Rania T.', initials: 'RT', rating: 4, date: 'March 2026', text: 'Great pace with solid projects. The quiz app was a highlight.' }
+    ]
+  },
+  {
+    id: 'aws-cloud-fundamentals',
+    title: 'AWS Cloud Fundamentals',
+    category: 'Cloud Computing',
+    tagline: 'Master the core AWS services and deploy your first cloud infrastructure.',
+    desc: 'The cloud runs the world, and AWS runs most of the cloud. Learn core services — compute, storage, networking and databases — and deploy real infrastructure with the console and the CLI.',
+    instructor: 'lena-novak',
+    rating: 4.8,
+    reviewCount: 520,
+    students: 1010,
+    duration: '18 hours',
+    level: 'Beginner',
+    price: 48,
+    oldPrice: 72,
+    icon: '☁',
+    gradient: 'cloud',
+    outcomes: [
+      'Understand core AWS services and concepts',
+      'Provision EC2 instances and manage them',
+      'Store and serve data with S3',
+      'Configure networking with VPC',
+      'Work with databases and IAM security',
+      'Deploy a full application on AWS'
+    ],
+    requirements: [
+      'Basic IT and Linux familiarity',
+      'An AWS account (free tier is enough)',
+      'Comfort with the command line'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['The cloud computing model', 'AWS global infrastructure', 'Creating your account', 'The management console'] },
+      { section: 'Fundamentals', lessons: ['EC2 and virtual machines', 'S3 storage', 'VPC networking', 'IAM security'] },
+      { section: 'Practical Development', lessons: ['Security groups', 'Elastic IPs and DNS', 'RDS databases', 'The AWS CLI'] },
+      { section: 'Building Projects', lessons: ['Project: web server deployment', 'Project: static site hosting', 'Project: multi-tier architecture', 'Project: backup strategy'] },
+      { section: 'Advanced Concepts', lessons: ['Auto scaling', 'Load balancing', 'Cost management', 'CloudWatch monitoring'] },
+      { section: 'Final Project', lessons: ['Designing the architecture', 'Deploying end to end', 'Hardening and monitoring', 'Documenting the setup'] }
+    ],
+    reviews: [
+      { name: 'Zara B.', initials: 'ZB', rating: 5, date: 'June 2026', text: 'I went from zero cloud knowledge to deploying a real web server. Brilliant.' },
+      { name: 'Nick P.', initials: 'NP', rating: 4, date: 'May 2026', text: 'Comprehensive and easy to follow. Great foundation for the AWS exams.' },
+      { name: 'Huda S.', initials: 'HS', rating: 5, date: 'April 2026', text: 'Lena makes cloud concepts tangible. The projects are genuinely useful.' }
+    ]
+  },
+  {
+    id: 'serverless-applications',
+    title: 'Serverless Applications with AWS',
+    category: 'Cloud Computing',
+    tagline: 'Build scalable apps with Lambda, API Gateway and DynamoDB — no servers to manage.',
+    desc: 'Serverless lets you focus on code, not infrastructure. Learn to build event-driven applications with AWS Lambda, expose them through API Gateway and store data in DynamoDB — the modern way to ship backend services.',
+    instructor: 'lena-novak',
+    rating: 4.8,
+    reviewCount: 390,
+    students: 760,
+    duration: '16 hours',
+    level: 'Intermediate',
+    price: 52,
+    oldPrice: 78,
+    icon: 'λ',
+    gradient: 'cloud',
+    outcomes: [
+      'Design event-driven serverless architectures',
+      'Write and deploy AWS Lambda functions',
+      'Expose APIs with API Gateway',
+      'Model data with DynamoDB',
+      'Orchestrate workflows with Step Functions',
+      'Monitor, secure and cost-optimise serverless apps'
+    ],
+    requirements: [
+      'Comfort with a programming language (Node or Python)',
+      'Basic AWS knowledge (our AWS course covers it)',
+      'An AWS account and the CLI installed'
+    ],
+    curriculum: [
+      { section: 'Introduction', lessons: ['What is serverless?', 'The Lambda execution model', 'Setting up the AWS CLI', 'Your first function'] },
+      { section: 'Fundamentals', lessons: ['Lambda triggers', 'API Gateway basics', 'DynamoDB tables', 'IAM for serverless'] },
+      { section: 'Practical Development', lessons: ['Building REST APIs', 'Handling events', 'Error handling and retries', 'Environment variables and secrets'] },
+      { section: 'Building Projects', lessons: ['Project: URL shortener', 'Project: image processing pipeline', 'Project: serverless todo API', 'Project: analytics collector'] },
+      { section: 'Advanced Concepts', lessons: ['Step Functions', 'Cold starts and performance', 'Monitoring with CloudWatch', 'Cost optimisation'] },
+      { section: 'Final Project', lessons: ['Designing the architecture', 'Building the services', 'Testing end to end', 'Deploying and documenting'] }
+    ],
+    reviews: [
+      { name: 'Sara E.', initials: 'SE', rating: 5, date: 'June 2026', text: 'Serverless finally clicked. I rebuilt a backend API for a fraction of the cost.' },
+      { name: 'Victor H.', initials: 'VH', rating: 4, date: 'May 2026', text: 'Practical and well structured. The image processing pipeline is great.' },
+      { name: 'Amina C.', initials: 'AC', rating: 5, date: 'April 2026', text: 'Exactly the modern stack employers ask about. Highly recommended.' }
     ]
   }
 ];

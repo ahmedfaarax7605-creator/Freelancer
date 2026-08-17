@@ -11,7 +11,10 @@
     'Database': { icon: '🗄️', desc: 'SQL, design & data modelling' },
     'DevOps': { icon: '🚀', desc: 'Containers, pipelines & cloud' },
     'UI/UX': { icon: '🎨', desc: 'Research, design & prototyping' },
-    'Cybersecurity': { icon: '🛡️', desc: 'Ethical hacking & defence' }
+    'Cybersecurity': { icon: '🛡️', desc: 'Ethical hacking & defence' },
+    'AI & Machine Learning': { icon: '🤖', desc: 'Models, LLMs & generative AI' },
+    'Mobile Development': { icon: '📱', desc: 'iOS & Android apps' },
+    'Cloud Computing': { icon: '☁️', desc: 'AWS, serverless & infrastructure' }
   };
 
   /* ---------- Categories ---------- */
