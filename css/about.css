@@ -1,0 +1,145 @@
+/* ============================================================
+   TradeCode Academy — About page styles
+   ============================================================ */
+
+/* ---------- Mission / Vision ---------- */
+.mv-section { padding-top: 56px; }
+.mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.mv-card { padding: 34px; }
+.mv-icon {
+  width: 52px; height: 52px;
+  display: grid; place-items: center;
+  border-radius: 14px;
+  background: var(--primary-dim);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.mv-card h2 { font-size: 24px; margin-bottom: 12px; }
+.mv-card p { color: var(--muted); font-size: 14.5px; }
+
+/* ---------- Story ---------- */
+.story-section { background: linear-gradient(180deg, var(--bg-soft), var(--bg)); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.story-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 60px; align-items: center; }
+.story-window { border: 1px solid var(--border-strong); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--bg-soft); }
+.window-bar { height: 40px; display: flex; align-items: center; gap: 7px; padding: 0 15px; border-bottom: 1px solid var(--border); }
+.window-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--surface-3); }
+.window-bar i:first-child { background: #f87171; }
+.window-bar span { margin-left: 9px; font-size: 11px; color: var(--muted); }
+.window-body { padding: 26px 30px; font-family: Consolas, monospace; font-size: 14px; line-height: 1.9; min-height: 260px; }
+.code-kw { color: #c084fc; }
+.code-tc { color: var(--primary); }
+.code-fn { color: #60a5fa; }
+.code-str { color: #fbbf24; }
+.story-copy h2 { font-size: clamp(26px, 3.6vw, 34px); margin: 12px 0 16px; }
+.story-copy > p { color: var(--muted); font-size: 15px; margin-bottom: 14px; }
+.story-copy strong { color: var(--text); }
+.story-points { display: grid; gap: 12px; margin-top: 22px; }
+.story-points li { display: flex; gap: 11px; align-items: flex-start; font-size: 14px; color: var(--text-2); }
+.story-points span {
+  flex-shrink: 0;
+  width: 21px; height: 21px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--primary-dim);
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 900;
+  margin-top: 2px;
+}
+
+/* ---------- Stats ---------- */
+.stats-band { padding-top: 60px; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(120deg, var(--surface-2), var(--surface));
+  padding: 44px 30px;
+  text-align: center;
+}
+.stat-cell b { display: block; font-size: 42px; letter-spacing: -0.03em; color: var(--primary); }
+.stat-cell span { color: var(--muted); font-size: 13px; }
+.demo-stats-note { text-align: center; color: var(--muted-2); font-size: 11.5px; margin-top: 14px; }
+
+/* ---------- Methodology ---------- */
+.phil-section { padding-top: 70px; }
+.method-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+.method-step { padding: 24px; position: relative; }
+.method-num {
+  font-size: 13px;
+  font-weight: 900;
+  color: var(--primary);
+  letter-spacing: 2px;
+  display: block;
+  margin-bottom: 26px;
+}
+.method-step h3 { font-size: 17px; margin-bottom: 8px; }
+.method-step p { color: var(--muted); font-size: 13px; }
+
+/* ---------- Practical ---------- */
+.practical-section { background: linear-gradient(180deg, var(--bg-soft), var(--bg)); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.practical-grid { display: grid; grid-template-columns: 1fr 0.9fr; gap: 60px; align-items: center; }
+.practical-copy h2 { font-size: clamp(26px, 3.6vw, 34px); margin: 12px 0 14px; }
+.practical-copy > p { color: var(--muted); font-size: 15px; margin-bottom: 22px; }
+.benefit-list { display: grid; gap: 14px; }
+.benefit-list li { border-left: 2px solid var(--primary); padding-left: 16px; }
+.benefit-list b { display: block; font-size: 14.5px; }
+.benefit-list span { color: var(--muted); font-size: 13px; }
+.practical-card { padding: 26px; }
+.practical-row { display: flex; align-items: center; gap: 13px; padding: 14px 0; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.practical-row .p-ico { font-size: 22px; }
+.practical-row div:nth-child(2) { flex: 1; min-width: 180px; }
+.practical-row b { display: block; font-size: 13.5px; }
+.practical-row span { color: var(--muted); font-size: 12px; }
+.p-bar { width: 100%; height: 8px; background: var(--surface-3); border-radius: 8px; overflow: hidden; margin-top: 10px; }
+.p-bar span { display: block; height: 100%; background: linear-gradient(90deg, #34d399, #0f8f6c); border-radius: 8px; }
+.practical-note { color: var(--muted-2); font-size: 11.5px; margin-top: 16px; }
+
+/* ---------- Community ---------- */
+.community-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.community-copy h2 { font-size: clamp(26px, 3.6vw, 34px); margin: 12px 0 14px; }
+.community-copy p { color: var(--muted); font-size: 15px; }
+.community-cards { display: grid; gap: 14px; }
+.comm-card { display: flex; align-items: center; gap: 16px; padding: 20px; }
+.comm-card span {
+  width: 46px; height: 46px;
+  display: grid; place-items: center;
+  border-radius: 12px;
+  background: var(--primary-dim);
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.comm-card b { display: block; font-size: 14.5px; }
+.comm-card small { color: var(--muted); font-size: 12.5px; }
+
+/* ---------- CTA ---------- */
+.cta-band { padding-top: 20px; }
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(120deg, var(--surface-2), var(--surface));
+  padding: 46px 48px;
+}
+.cta-inner h2 { font-size: clamp(26px, 3.6vw, 34px); margin: 10px 0 8px; }
+.cta-inner p { color: var(--muted); }
+.cta-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .mv-grid, .story-grid, .practical-grid, .community-inner { grid-template-columns: 1fr; }
+  .method-grid { grid-template-columns: repeat(3, 1fr); }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .method-grid { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr 1fr; padding: 30px 18px; }
+  .stat-cell b { font-size: 34px; }
+  .cta-inner { padding: 30px 22px; }
+}

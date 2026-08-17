@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About TradeCode Academy — our mission, vision, learning philosophy and the story behind the platform.">
+  <title>About Us | TradeCode Academy</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/about.css">
+</head>
+<body data-page="about">
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">TC</span>
+        <span>TradeCode <em style="font-style:normal;color:var(--primary)">Academy</em></span>
+      </a>
+      <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="../index.html" data-nav="home">Home</a>
+        <a href="courses.html" data-nav="courses">Courses</a>
+        <a href="instructors.html" data-nav="instructors">Instructors</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="pricing.html" data-nav="pricing">Pricing</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+        <button class="btn btn-outline btn-sm" data-modal="login">Log in</button>
+        <button class="btn btn-primary btn-sm" data-modal="register">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="sep">/</span>
+          <span>About</span>
+        </nav>
+        <span class="eyebrow">About TradeCode Academy</span>
+        <h1>Education that turns knowledge into skill</h1>
+        <p>We started TradeCode because we were tired of courses that feel good to watch but teach nothing you can use. Ours are built around one principle: you learn by building.</p>
+      </div>
+    </section>
+
+    <!-- ============ MISSION / VISION ============ -->
+    <section class="section mv-section">
+      <div class="container mv-grid">
+        <article class="mv-card card reveal">
+          <span class="mv-icon">🎯</span>
+          <h2>Our mission</h2>
+          <p>To make high-quality, practical tech education accessible to everyone — regardless of background, budget or location — by teaching through real projects instead of passive lectures.</p>
+        </article>
+        <article class="mv-card card reveal">
+          <span class="mv-icon">🔭</span>
+          <h2>Our vision</h2>
+          <p>A world where anyone with curiosity and commitment can build the skills to change their career — and where employers trust project-based learning as much as formal degrees.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="section story-section">
+      <div class="container story-grid">
+        <div class="story-visual">
+          <div class="story-window">
+            <div class="window-bar"><i></i><i></i><i></i><span>why-we-exist.md</span></div>
+            <div class="window-body">
+              <p><span class="code-kw">class</span> <span class="code-tc">TradeCodeAcademy</span>:</p>
+              <p>&nbsp;&nbsp;<span class="code-kw">def</span> <span class="code-fn">why_we_exist</span>():</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-kw">return</span> [</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"courses people finish",</span></p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"skills people use",</span></p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-str">"projects people hire for",</span></p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;]</p>
+            </div>
+          </div>
+        </div>
+        <div class="story-copy">
+          <span class="eyebrow">Why we exist</span>
+          <h2>The problem with online learning</h2>
+          <p>Most online courses are passive: you watch, you nod, you forget. Completion rates are low, and even people who finish struggle to apply what they learned.</p>
+          <p>We believe the missing ingredient is <strong>doing</strong>. When you build a real project — a web app, a model, a security lab — you don't just learn a topic, you learn how to think about it.</p>
+          <ul class="story-points">
+            <li><span>✓</span> Every course is structured around deliverable projects</li>
+            <li><span>✓</span> Lessons are short, focused and immediately applicable</li>
+            <li><span>✓</span> Instructors are practitioners, not full-time lecturers</li>
+            <li><span>✓</span> Progress and outcomes are visible, measurable and shareable</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section stats-band">
+      <div class="container">
+        <div class="stats-grid" id="statsGrid">
+          <div class="stat-cell"><b class="count" data-target="10" data-suffix="K+">0</b><span>Students learning</span></div>
+          <div class="stat-cell"><b class="count" data-target="100" data-suffix="+">0</b><span>Courses published</span></div>
+          <div class="stat-cell"><b class="count" data-target="50" data-suffix="+">0</b><span>Expert instructors</span></div>
+          <div class="stat-cell"><b class="count" data-target="95" data-suffix="%">0</b><span>Student satisfaction</span></div>
+        </div>
+        <p class="demo-stats-note">Sample / demo statistics for this capstone project.</p>
+      </div>
+    </section>
+
+    <!-- ============ PHILOSOPHY ============ -->
+    <section class="section phil-section">
+      <div class="container">
+        <div class="section-head center">
+          <div>
+            <span class="eyebrow">Learning philosophy</span>
+            <h2>How we structure every course</h2>
+            <p>Our methodology mirrors how professionals actually learn on the job — in short, intense cycles of building and reviewing.</p>
+          </div>
+        </div>
+        <div class="method-grid">
+          <article class="method-step card reveal">
+            <span class="method-num">01</span>
+            <h3>Learn</h3>
+            <p>Short, focused lessons introduce one concept at a time — no more 40-minute videos.</p>
+          </article>
+          <article class="method-step card reveal">
+            <span class="method-num">02</span>
+            <h3>Practice</h3>
+            <p>Quizzes and exercises lock in each concept before you move on.</p>
+          </article>
+          <article class="method-step card reveal">
+            <span class="method-num">03</span>
+            <h3>Build</h3>
+            <p>Real projects turn knowledge into skill — every section ends with something you make.</p>
+          </article>
+          <article class="method-step card reveal">
+            <span class="method-num">04</span>
+            <h3>Review</h3>
+            <p>Code reviews, retrospectives and feedback loops sharpen your judgment.</p>
+          </article>
+          <article class="method-step card reveal">
+            <span class="method-num">05</span>
+            <h3>Share</h3>
+            <p>Show your work: certificates, portfolios and a community that celebrates progress.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRACTICAL LEARNING ============ -->
+    <section class="section practical-section">
+      <div class="container practical-grid">
+        <div class="practical-copy">
+          <span class="eyebrow">Why practical learning</span>
+          <h2>Projects beat lectures</h2>
+          <p>Study after study shows we retain more when we build. Here's what project-based learning gives you that passive courses can't:</p>
+          <ul class="benefit-list">
+            <li><b>Deep retention</b><span>You remember what you struggled to build — not what you watched.</span></li>
+            <li><b>Portfolio evidence</b><span>Finished projects prove your skills to employers, not just certificates.</span></li>
+            <li><b>Real problem solving</b><span>Debugging and design decisions are where the actual learning happens.</span></li>
+            <li><b>Interview confidence</b><span>Talk about what you built, the trade-offs you made and what you'd improve.</span></li>
+          </ul>
+        </div>
+        <div class="practical-visual">
+          <div class="practical-card card">
+            <div class="practical-row">
+              <span class="p-ico">👀</span>
+              <div><b>Watching a video</b><span>Retention: ~10% after a week</span></div>
+              <div class="p-bar"><span style="width:10%"></span></div>
+            </div>
+            <div class="practical-row">
+              <span class="p-ico">🛠️</span>
+              <div><b>Building a project</b><span>Retention: ~75% after a week</span></div>
+              <div class="p-bar"><span style="width:75%"></span></div>
+            </div>
+            <p class="practical-note">Learning pyramid estimates — our courses are designed for the bottom of the pyramid.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMMUNITY ============ -->
+    <section class="section community-section">
+      <div class="container community-inner">
+        <div class="community-copy">
+          <span class="eyebrow">Community</span>
+          <h2>You're never learning alone</h2>
+          <p>Every course includes access to a community of learners who share projects, answer questions and keep each other going. Learning is social — we designed TradeCode that way on purpose.</p>
+        </div>
+        <div class="community-cards">
+          <article class="comm-card card"><span>💬</span><b>Discussion forums</b><small>Per-course threads with instructor replies</small></article>
+          <article class="comm-card card"><span>🤝</span><b>Study groups</b><small>Find peers working on the same track</small></article>
+          <article class="comm-card card"><span>🏆</span><b>Showcase</b><small>Share completed projects with the community</small></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section cta-band">
+      <div class="container cta-inner">
+        <div>
+          <span class="eyebrow">Join us</span>
+          <h2>Start building today</h2>
+          <p>Explore the catalog and take your first step toward a new skill.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="courses.html" class="btn btn-primary btn-large">Browse Courses</a>
+          <a href="contact.html" class="btn btn-outline btn-large">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-mark">TC</span> TradeCode <span style="color:var(--primary)">Academy</span></a>
+        <p>Modern, project-based education for developers, designers and security professionals.</p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#faq">FAQ</a>
+        <a href="course-details.html?id=javascript-zero-to-advanced">Sample course</a>
+      </div>
+      <div class="footer-news">
+        <h4>Newsletter</h4>
+        <p>Get new courses and learning tips in your inbox. No spam.</p>
+        <form class="news-form">
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> TradeCode Academy. All rights reserved.</span>
+      <span>Learn smarter. Build better.</span>
+    </div>
+  </footer>
+
+  <!-- Auth modal (demo UI) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-logo">TC</div>
+      <h2 id="modalTitle">Create your account</h2>
+      <p id="modalText">Start your learning journey today.</p>
+      <form id="authForm">
+        <div class="field"><input type="text" id="nameField" placeholder="Full name" required></div>
+        <div class="field"><input type="email" placeholder="Email address" required></div>
+        <div class="field"><input type="password" placeholder="Password (min. 6 characters)" required minlength="6"></div>
+        <button class="btn btn-primary btn-block" type="submit" id="authSubmit">Create Account</button>
+      </form>
+      <small class="demo-note">Demo UI — connect this form to your backend/auth service.</small>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="../js/courses.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/about.js"></script>
+</body>
+</html>
