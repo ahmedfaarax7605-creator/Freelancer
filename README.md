@@ -4,6 +4,10 @@ A modern, premium **black/dark multi-page e-learning website** built with plain 
 
 This project was rebuilt from the original single-page TradeCode Academy site into a full multi-page platform, and it continues the Git & GitHub Capstone workflow (feature branches, pull requests, issues, code review and CI).
 
+## Live demo
+
+🚀 **View the deployed site:** https://ahmedfaarax7605-creator.github.io/Freelancer/
+
 > Sample/demo content only — all courses, instructors, reviews and statistics are realistic placeholder data. No backend is required.
 
 ## Features
@@ -87,7 +91,7 @@ PROJECT/
 
 ## How to run locally
 
-No build step or server is required.
+No build step or server is required. Prefer to just browse? Use the [live demo](https://ahmedfaarax7605-creator.github.io/Freelancer/).
 
 1. Clone the repository:
 
