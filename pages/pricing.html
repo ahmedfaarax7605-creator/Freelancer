@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TradeCode Academy pricing — Free, Pro and Premium plans. Monthly or yearly billing, certificates, projects, mentorship and more.">
+  <title>Pricing | TradeCode Academy</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pricing.css">
+</head>
+<body data-page="pricing">
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">TC</span>
+        <span>TradeCode <em style="font-style:normal;color:var(--primary)">Academy</em></span>
+      </a>
+      <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="../index.html" data-nav="home">Home</a>
+        <a href="courses.html" data-nav="courses">Courses</a>
+        <a href="instructors.html" data-nav="instructors">Instructors</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="pricing.html" data-nav="pricing">Pricing</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+        <button class="btn btn-outline btn-sm" data-modal="login">Log in</button>
+        <button class="btn btn-primary btn-sm" data-modal="register">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="sep">/</span>
+          <span>Pricing</span>
+        </nav>
+        <span class="eyebrow">Simple, transparent pricing</span>
+        <h1>Choose the plan that fits your goals</h1>
+        <p>Start free, upgrade when you're ready. Every paid plan comes with a 7-day money-back guarantee — no questions asked.</p>
+      </div>
+    </section>
+
+    <!-- ============ PLANS ============ -->
+    <section class="section plans-section">
+      <div class="container">
+        <!-- Billing toggle -->
+        <div class="billing-toggle">
+          <span id="monthlyLabel" class="billing-label active">Monthly</span>
+          <button class="toggle" id="billingToggle" role="switch" aria-checked="false" aria-label="Toggle yearly billing">
+            <span class="toggle-knob"></span>
+          </button>
+          <span id="yearlyLabel" class="billing-label">Yearly <em class="save-badge">Save 20%</em></span>
+        </div>
+
+        <div class="plans-grid">
+          <!-- Free -->
+          <article class="plan-card card">
+            <div class="plan-head">
+              <h3>Free</h3>
+              <p>Try TradeCode with selected free courses.</p>
+            </div>
+            <div class="plan-price">
+              <b data-monthly="0" data-yearly="0">$0</b>
+              <span data-period="monthly">forever</span>
+            </div>
+            <ul class="plan-features">
+              <li class="yes">Selected free courses</li>
+              <li class="yes">Basic access to lessons</li>
+              <li class="yes">Community access</li>
+              <li class="no">Certificates of completion</li>
+              <li class="no">Progress tracking</li>
+              <li class="no">Mentorship</li>
+            </ul>
+            <button class="btn btn-outline btn-block" data-modal="register">Start for Free</button>
+          </article>
+
+          <!-- Pro (recommended) -->
+          <article class="plan-card card recommended">
+            <span class="rec-badge">★ Recommended</span>
+            <div class="plan-head">
+              <h3>Pro</h3>
+              <p>Full access for serious learners.</p>
+            </div>
+            <div class="plan-price">
+              <b data-monthly="19" data-yearly="15">$19</b>
+              <span data-period="monthly">per month, billed monthly</span>
+            </div>
+            <ul class="plan-features">
+              <li class="yes">Full course library (120+ courses)</li>
+              <li class="yes">Certificates of completion</li>
+              <li class="yes">Hands-on projects & quizzes</li>
+              <li class="yes">Progress tracking & goals</li>
+              <li class="yes">Learn on any device</li>
+              <li class="no">1:1 mentorship sessions</li>
+            </ul>
+            <button class="btn btn-primary btn-block" data-modal="register">Get Started</button>
+          </article>
+
+          <!-- Premium -->
+          <article class="plan-card card">
+            <div class="plan-head">
+              <h3>Premium</h3>
+              <p>Everything you need to level up fast.</p>
+            </div>
+            <div class="plan-price">
+              <b data-monthly="39" data-yearly="31">$39</b>
+              <span data-period="monthly">per month, billed monthly</span>
+            </div>
+            <ul class="plan-features">
+              <li class="yes">Everything in Pro</li>
+              <li class="yes">Monthly mentorship sessions</li>
+              <li class="yes">Advanced & career courses</li>
+              <li class="yes">Career resources & reviews</li>
+              <li class="yes">Priority support</li>
+              <li class="yes">Early access to new courses</li>
+            </ul>
+            <button class="btn btn-outline btn-block" data-modal="register">Go Premium</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMPARISON ============ -->
+    <section class="section compare-section">
+      <div class="container">
+        <div class="section-head center">
+          <div>
+            <span class="eyebrow">Compare plans</span>
+            <h2>Feature comparison</h2>
+            <p>Every detail, side by side — so you can pick with confidence.</p>
+          </div>
+        </div>
+        <div class="compare-table-wrap card">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th class="feature-col">Feature</th>
+                <th>Free</th>
+                <th class="rec-col">Pro</th>
+                <th>Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Course access</td><td>Selected free courses</td><td>Full library</td><td>Full library + early access</td></tr>
+              <tr><td>Certificates</td><td>—</td><td>✓ Included</td><td>✓ Included</td></tr>
+              <tr><td>Projects & quizzes</td><td>Limited</td><td>✓ All courses</td><td>✓ All courses</td></tr>
+              <tr><td>Progress tracking</td><td>—</td><td>✓</td><td>✓</td></tr>
+              <tr><td>Community access</td><td>✓</td><td>✓</td><td>✓</td></tr>
+              <tr><td>Mentorship</td><td>—</td><td>—</td><td>✓ Monthly 1:1</td></tr>
+              <tr><td>Career resources</td><td>—</td><td>—</td><td>✓ Resume & review</td></tr>
+              <tr><td>Priority support</td><td>—</td><td>—</td><td>✓</td></tr>
+              <tr><td>Money-back guarantee</td><td>—</td><td>7 days</td><td>7 days</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GUARANTEE ============ -->
+    <section class="section guarantee">
+      <div class="container guarantee-inner">
+        <span class="g-ico">🛡️</span>
+        <div>
+          <h2>Not sure yet? Start free.</h2>
+          <p>Create a free account, explore the catalog and try selected courses with zero commitment. Upgrade only when you're ready.</p>
+        </div>
+        <a href="courses.html" class="btn btn-primary btn-large">Explore Free Courses</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-mark">TC</span> TradeCode <span style="color:var(--primary)">Academy</span></a>
+        <p>Modern, project-based education for developers, designers and security professionals.</p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#faq">FAQ</a>
+        <a href="course-details.html?id=javascript-zero-to-advanced">Sample course</a>
+      </div>
+      <div class="footer-news">
+        <h4>Newsletter</h4>
+        <p>Get new courses and learning tips in your inbox. No spam.</p>
+        <form class="news-form">
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> TradeCode Academy. All rights reserved.</span>
+      <span>Learn smarter. Build better.</span>
+    </div>
+  </footer>
+
+  <!-- Auth modal (demo UI) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-logo">TC</div>
+      <h2 id="modalTitle">Create your account</h2>
+      <p id="modalText">Start your learning journey today.</p>
+      <form id="authForm">
+        <div class="field"><input type="text" id="nameField" placeholder="Full name" required></div>
+        <div class="field"><input type="email" placeholder="Email address" required></div>
+        <div class="field"><input type="password" placeholder="Password (min. 6 characters)" required minlength="6"></div>
+        <button class="btn btn-primary btn-block" type="submit" id="authSubmit">Create Account</button>
+      </form>
+      <small class="demo-note">Demo UI — connect this form to your backend/auth service.</small>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="../js/courses.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/pricing.js"></script>
+</body>
+</html>

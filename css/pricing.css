@@ -1,0 +1,138 @@
+/* ============================================================
+   TradeCode Academy — Pricing page styles
+   ============================================================ */
+
+/* ---------- Billing toggle ---------- */
+.plans-section { padding-top: 40px; }
+.billing-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 44px;
+}
+.billing-label { font-size: 14.5px; font-weight: 700; color: var(--muted); transition: color 0.2s; }
+.billing-label.active { color: var(--text); }
+.save-badge {
+  font-style: normal;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--primary);
+  background: var(--primary-dim);
+  border: 1px solid rgba(52, 211, 153, 0.35);
+  padding: 3px 9px;
+  border-radius: 100px;
+  margin-left: 5px;
+}
+.toggle {
+  width: 58px; height: 30px;
+  border-radius: 100px;
+  border: 1px solid var(--border-strong);
+  background: var(--surface-2);
+  position: relative;
+  transition: background 0.25s;
+}
+.toggle-knob {
+  position: absolute;
+  top: 3px; left: 3px;
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  background: var(--primary);
+  transition: transform 0.25s;
+  box-shadow: 0 0 10px var(--primary-glow);
+}
+.toggle[aria-checked="true"] { background: var(--primary-dim); }
+.toggle[aria-checked="true"] .toggle-knob { transform: translateX(28px); }
+
+/* ---------- Plans ---------- */
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  align-items: stretch;
+}
+.plan-card { padding: 32px; display: flex; flex-direction: column; position: relative; }
+.plan-card.recommended {
+  border-color: rgba(52, 211, 153, 0.5);
+  background: linear-gradient(160deg, rgba(52, 211, 153, 0.07), var(--surface));
+  box-shadow: 0 0 0 1px rgba(52, 211, 153, 0.25), var(--shadow);
+  transform: translateY(-8px);
+}
+.rec-badge {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #34d399, #0f8f6c);
+  color: #032017;
+  font-size: 11.5px;
+  font-weight: 900;
+  padding: 6px 16px;
+  border-radius: 100px;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.35);
+}
+.plan-head h3 { font-size: 20px; }
+.plan-head p { color: var(--muted); font-size: 13.5px; margin-top: 6px; }
+.plan-price { margin: 26px 0 22px; padding-bottom: 22px; border-bottom: 1px solid var(--border); }
+.plan-price b { font-size: 44px; letter-spacing: -0.03em; }
+.plan-price span { display: block; color: var(--muted); font-size: 12.5px; margin-top: 4px; }
+.plan-features { display: grid; gap: 11px; margin-bottom: 26px; flex: 1; }
+.plan-features li { font-size: 13.5px; color: var(--text-2); display: flex; gap: 9px; align-items: flex-start; }
+.plan-features li::before { content: '✓'; color: var(--primary); font-weight: 900; flex-shrink: 0; }
+.plan-features li.no { color: var(--muted-2); text-decoration: line-through; }
+.plan-features li.no::before { content: '—'; color: var(--muted-2); }
+
+/* ---------- Comparison table ---------- */
+.compare-section { padding-top: 20px; }
+.compare-table-wrap { overflow-x: auto; }
+.compare-table { width: 100%; border-collapse: collapse; min-width: 640px; }
+.compare-table th, .compare-table td { padding: 14px 20px; text-align: center; font-size: 13.5px; }
+.compare-table thead th {
+  background: var(--surface-2);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-2);
+  border-bottom: 1px solid var(--border);
+}
+.compare-table th:first-child { text-align: left; }
+.compare-table .feature-col { text-align: left !important; }
+.compare-table tbody td { border-bottom: 1px solid var(--border); color: var(--muted); }
+.compare-table tbody tr:hover td { background: var(--bg-soft); }
+.compare-table .rec-col { color: var(--primary); font-weight: 800; background: rgba(52, 211, 153, 0.05); }
+
+/* ---------- Guarantee ---------- */
+.guarantee { padding-top: 20px; }
+.guarantee-inner {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  border: 1px solid rgba(52, 211, 153, 0.25);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(120deg, var(--surface-2), var(--surface));
+  padding: 38px 44px;
+}
+.g-ico {
+  width: 56px; height: 56px;
+  display: grid; place-items: center;
+  border-radius: 14px;
+  background: var(--primary-dim);
+  font-size: 26px;
+  flex-shrink: 0;
+}
+.guarantee-inner div { flex: 1; min-width: 240px; }
+.guarantee-inner h2 { font-size: 24px; margin-bottom: 6px; }
+.guarantee-inner p { color: var(--muted); font-size: 14px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .plans-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  .plan-card.recommended { transform: none; }
+}
+@media (max-width: 640px) {
+  .guarantee-inner { padding: 28px 22px; }
+  .billing-toggle { flex-wrap: wrap; }
+}

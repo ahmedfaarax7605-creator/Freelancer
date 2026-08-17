@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the TradeCode Academy instructors — industry experts teaching web development, programming, data, DevOps and design.">
+  <title>Instructors | TradeCode Academy</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/instructors.css">
+</head>
+<body data-page="instructors">
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">TC</span>
+        <span>TradeCode <em style="font-style:normal;color:var(--primary)">Academy</em></span>
+      </a>
+      <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="../index.html" data-nav="home">Home</a>
+        <a href="courses.html" data-nav="courses">Courses</a>
+        <a href="instructors.html" data-nav="instructors">Instructors</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="pricing.html" data-nav="pricing">Pricing</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+        <button class="btn btn-outline btn-sm" data-modal="login">Log in</button>
+        <button class="btn btn-primary btn-sm" data-modal="register">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="sep">/</span>
+          <span>Instructors</span>
+        </nav>
+        <span class="eyebrow">Our teaching team</span>
+        <h1>Learn from people who do the work</h1>
+        <p>Every TradeCode instructor is a working professional in their field — engineers, data scientists, designers and security experts who turn real experience into structured lessons.</p>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section inst-stats">
+      <div class="container inst-stats-grid">
+        <div class="inst-stat card"><b>50+</b><span>Expert instructors</span></div>
+        <div class="inst-stat card"><b>12+</b><span>Years combined experience</span></div>
+        <div class="inst-stat card"><b>94K+</b><span>Students taught</span></div>
+        <div class="inst-stat card"><b>4.8★</b><span>Average instructor rating</span></div>
+      </div>
+    </section>
+
+    <!-- ============ DIRECTORY ============ -->
+    <section class="section inst-directory">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Instructor directory</span>
+            <h2>Meet the team</h2>
+            <p>Filter by specialization and tap any instructor to view their full profile.</p>
+          </div>
+          <div class="filter-bar" id="instFilterBar" role="group" aria-label="Filter instructors by specialization">
+            <button class="filter active" data-filter="All">All</button>
+            <button class="filter" data-filter="Web Development">Web Development</button>
+            <button class="filter" data-filter="Programming">Programming</button>
+            <button class="filter" data-filter="Data">Data</button>
+            <button class="filter" data-filter="DevOps">DevOps</button>
+            <button class="filter" data-filter="Design">Design</button>
+          </div>
+        </div>
+        <div class="instructor-grid" id="instructorGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="section teach-cta">
+      <div class="container teach-inner">
+        <div>
+          <span class="eyebrow">Share your knowledge</span>
+          <h2>Want to teach with us?</h2>
+          <p>We partner with experts who love teaching. Bring your skills to 18,000+ students.</p>
+        </div>
+        <a href="contact.html" class="btn btn-primary btn-large">Become an Instructor</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-mark">TC</span> TradeCode <span style="color:var(--primary)">Academy</span></a>
+        <p>Modern, project-based education for developers, designers and security professionals.</p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#faq">FAQ</a>
+        <a href="course-details.html?id=javascript-zero-to-advanced">Sample course</a>
+      </div>
+      <div class="footer-news">
+        <h4>Newsletter</h4>
+        <p>Get new courses and learning tips in your inbox. No spam.</p>
+        <form class="news-form">
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> TradeCode Academy. All rights reserved.</span>
+      <span>Learn smarter. Build better.</span>
+    </div>
+  </footer>
+
+  <!-- Instructor profile modal -->
+  <div class="modal" id="instructorModal" aria-hidden="true">
+    <div class="modal-box modal-wide">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="profile-modal" id="profileModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Auth modal (demo UI) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-logo">TC</div>
+      <h2 id="modalTitle">Create your account</h2>
+      <p id="modalText">Start your learning journey today.</p>
+      <form id="authForm">
+        <div class="field"><input type="text" id="nameField" placeholder="Full name" required></div>
+        <div class="field"><input type="email" placeholder="Email address" required></div>
+        <div class="field"><input type="password" placeholder="Password (min. 6 characters)" required minlength="6"></div>
+        <button class="btn btn-primary btn-block" type="submit" id="authSubmit">Create Account</button>
+      </form>
+      <small class="demo-note">Demo UI — connect this form to your backend/auth service.</small>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="../js/courses.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/instructors.js"></script>
+</body>
+</html>

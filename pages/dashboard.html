@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your TradeCode Academy student dashboard — course progress, certificates, statistics and recent activity. Demo UI, frontend only.">
+  <title>My Dashboard | TradeCode Academy</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body data-page="dashboard">
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-mark">TC</span>
+        <span>TradeCode <em style="font-style:normal;color:var(--primary)">Academy</em></span>
+      </a>
+      <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="../index.html" data-nav="home">Home</a>
+        <a href="courses.html" data-nav="courses">Courses</a>
+        <a href="instructors.html" data-nav="instructors">Instructors</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="pricing.html" data-nav="pricing">Pricing</a>
+        <a href="dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+        <button class="btn btn-outline btn-sm" data-modal="login">Log in</button>
+        <button class="btn btn-primary btn-sm" data-modal="register">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ WELCOME ============ -->
+    <section class="dash-hero">
+      <div class="container">
+        <div class="welcome-row">
+          <div class="welcome-copy">
+            <span class="eyebrow">Student dashboard</span>
+            <h1 id="greeting">Welcome back, Ahmed 👋</h1>
+            <p>Keep the momentum going — you're <b>1 hour</b> away from finishing this week's goal.</p>
+          </div>
+          <div class="profile-card card">
+            <span class="avatar avatar-lg av-security">AF</span>
+            <div class="profile-info">
+              <b>Ahmed Farah</b>
+              <span>Pro Plan · Member since 2025</span>
+              <div class="profile-tags">
+                <span class="badge green">🔥 14-day streak</span>
+                <span class="badge">⚡ 12 hrs this week</span>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-outline btn-sm">Edit profile</a>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="dash-stats">
+          <div class="dash-stat card"><b>4</b><span>Enrolled courses</span></div>
+          <div class="dash-stat card"><b>1</b><span>In progress</span></div>
+          <div class="dash-stat card"><b>3</b><span>Completed</span></div>
+          <div class="dash-stat card"><b>3</b><span>Certificates</span></div>
+          <div class="dash-stat card"><b>87%</b><span>Average progress</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MAIN GRID ============ -->
+    <section class="section dash-main-section">
+      <div class="container dash-grid">
+        <!-- Left column -->
+        <div class="dash-left">
+          <!-- Continue learning -->
+          <div class="dash-block card">
+            <div class="dash-block-head">
+              <h2>My Learning</h2>
+              <a href="courses.html" class="btn btn-outline btn-sm">Browse more</a>
+            </div>
+            <div class="learning-list" id="learningList">
+              <div class="learning-item">
+                <span class="related-thumb cover-programming"></span>
+                <div class="learning-info">
+                  <b>JavaScript Fundamentals</b>
+                  <span>David Chen · 30 of 40 lessons</span>
+                  <div class="progress"><span style="width:75%"></span></div>
+                </div>
+                <div class="learning-pct">75%</div>
+                <button class="btn btn-primary btn-sm resume">Continue</button>
+              </div>
+              <div class="learning-item">
+                <span class="related-thumb cover-web"></span>
+                <div class="learning-info">
+                  <b>Node.js Backend Development</b>
+                  <span>Amira Hassan · 17 of 40 lessons</span>
+                  <div class="progress"><span style="width:42%"></span></div>
+                </div>
+                <div class="learning-pct">42%</div>
+                <button class="btn btn-primary btn-sm resume">Continue</button>
+              </div>
+              <div class="learning-item">
+                <span class="related-thumb cover-database"></span>
+                <div class="learning-info">
+                  <b>SQL & Databases</b>
+                  <span>James Carter · 36 of 40 lessons</span>
+                  <div class="progress"><span style="width:90%"></span></div>
+                </div>
+                <div class="learning-pct">90%</div>
+                <button class="btn btn-primary btn-sm resume">Continue</button>
+              </div>
+              <div class="learning-item">
+                <span class="related-thumb cover-devops"></span>
+                <div class="learning-info">
+                  <b>Git & GitHub Mastery</b>
+                  <span>Lena Novak · 24 of 24 lessons</span>
+                  <div class="progress complete"><span style="width:100%"></span></div>
+                </div>
+                <div class="learning-pct">100%</div>
+                <button class="btn btn-outline btn-sm" disabled>Completed</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Completed courses -->
+          <div class="dash-block card">
+            <div class="dash-block-head">
+              <h2>Completed courses</h2>
+              <span class="badge">3 total</span>
+            </div>
+            <div class="completed-grid">
+              <article class="completed-card">
+                <span class="avatar avatar-md av-devops">GH</span>
+                <div>
+                  <b>Git & GitHub Mastery</b>
+                  <span>Completed August 2026 · Certificate earned</span>
+                </div>
+                <span class="done-check">✓</span>
+              </article>
+              <article class="completed-card">
+                <span class="avatar avatar-md av-programming">Py</span>
+                <div>
+                  <b>Python Programming Essentials</b>
+                  <span>Completed July 2026 · Certificate earned</span>
+                </div>
+                <span class="done-check">✓</span>
+              </article>
+              <article class="completed-card">
+                <span class="avatar avatar-md av-uiux">UX</span>
+                <div>
+                  <b>UI/UX Design Fundamentals</b>
+                  <span>Completed May 2026 · Certificate earned</span>
+                </div>
+                <span class="done-check">✓</span>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div class="dash-right">
+          <!-- Certificates -->
+          <div class="dash-block card">
+            <div class="dash-block-head">
+              <h2>Certificates</h2>
+              <span class="badge gold">3 earned</span>
+            </div>
+            <div class="cert-list">
+              <a class="cert-item" href="#" data-cert="Git & GitHub Mastery">
+                <span class="cert-ico">📜</span>
+                <div><b>Git & GitHub Mastery</b><small>Issued August 2026</small></div>
+                <span class="cert-dl">↓</span>
+              </a>
+              <a class="cert-item" href="#" data-cert="Python Programming Essentials">
+                <span class="cert-ico">📜</span>
+                <div><b>Python Programming Essentials</b><small>Issued July 2026</small></div>
+                <span class="cert-dl">↓</span>
+              </a>
+              <a class="cert-item" href="#" data-cert="UI/UX Design Fundamentals">
+                <span class="cert-ico">📜</span>
+                <div><b>UI/UX Design Fundamentals</b><small>Issued May 2026</small></div>
+                <span class="cert-dl">↓</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Progress stats -->
+          <div class="dash-block card">
+            <div class="dash-block-head">
+              <h2>Weekly activity</h2>
+              <span class="badge green">▲ 24%</span>
+            </div>
+            <div class="week-bars" id="weekBars">
+              <div class="wbar"><span style="height:35%"></span><small>Mon</small></div>
+              <div class="wbar"><span style="height:55%"></span><small>Tue</small></div>
+              <div class="wbar"><span style="height:40%"></span><small>Wed</small></div>
+              <div class="wbar"><span style="height:70%"></span><small>Thu</small></div>
+              <div class="wbar"><span style="height:60%"></span><small>Fri</small></div>
+              <div class="wbar"><span style="height:85%"></span><small>Sat</small></div>
+              <div class="wbar"><span style="height:100%"></span><small>Sun</small></div>
+            </div>
+            <div class="week-total"><b>12.5</b> hours learned this week · best day: Sunday</div>
+          </div>
+
+          <!-- Recent activity -->
+          <div class="dash-block card">
+            <div class="dash-block-head">
+              <h2>Recent activity</h2>
+            </div>
+            <ul class="activity-list">
+              <li><span class="act-ico">✅</span><div><b>Completed lesson</b><small>JavaScript Fundamentals · Lesson 30</small></div><time>2h ago</time></li>
+              <li><span class="act-ico">🏆</span><div><b>Earned certificate</b><small>Git & GitHub Mastery</small></div><time>1d ago</time></li>
+              <li><span class="act-ico">▶️</span><div><b>Started lesson</b><small>Node.js Backend · Lesson 17</small></div><time>2d ago</time></li>
+              <li><span class="act-ico">💬</span><div><b>Posted in community</b><small>SQL & Databases · Study group</small></div><time>3d ago</time></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo"><span class="logo-mark">TC</span> TradeCode <span style="color:var(--primary)">Academy</span></a>
+        <p>Modern, project-based education for developers, designers and security professionals.</p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="courses.html">Courses</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="dashboard.html">Dashboard</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#faq">FAQ</a>
+        <a href="course-details.html?id=javascript-zero-to-advanced">Sample course</a>
+      </div>
+      <div class="footer-news">
+        <h4>Newsletter</h4>
+        <p>Get new courses and learning tips in your inbox. No spam.</p>
+        <form class="news-form">
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> TradeCode Academy. All rights reserved.</span>
+      <span>Learn smarter. Build better.</span>
+    </div>
+  </footer>
+
+  <!-- Auth modal (demo UI) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-logo">TC</div>
+      <h2 id="modalTitle">Create your account</h2>
+      <p id="modalText">Start your learning journey today.</p>
+      <form id="authForm">
+        <div class="field"><input type="text" id="nameField" placeholder="Full name" required></div>
+        <div class="field"><input type="email" placeholder="Email address" required></div>
+        <div class="field"><input type="password" placeholder="Password (min. 6 characters)" required minlength="6"></div>
+        <button class="btn btn-primary btn-block" type="submit" id="authSubmit">Create Account</button>
+      </form>
+      <small class="demo-note">Demo UI — connect this form to your backend/auth service.</small>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="../js/courses.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>
