@@ -1,0 +1,167 @@
+/* ============================================================
+   TradeCode Academy — Course details page styles
+   ============================================================ */
+
+.course-hero { padding-bottom: 48px; }
+.course-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 48px;
+  align-items: start;
+}
+.course-hero-badges { display: flex; gap: 8px; margin-bottom: 14px; }
+.course-hero h1 { margin-bottom: 12px; }
+.course-hero-info > p { color: var(--muted); font-size: 16px; max-width: 640px; }
+.hero-meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; color: var(--text-2); font-size: 13.5px; margin: 16px 0; }
+.hero-meta .dot { color: var(--muted-2); }
+.hero-instructor { display: flex; align-items: center; gap: 12px; }
+.hero-instructor small { display: block; color: var(--muted-2); font-size: 11.5px; }
+.hero-instructor a { font-weight: 700; font-size: 14px; }
+.hero-instructor a:hover { color: var(--primary); }
+
+/* ---------- Enroll card ---------- */
+.enroll-card { overflow: hidden; position: sticky; top: 92px; }
+.enroll-cover { height: 168px; background-size: cover; background-position: center; }
+.enroll-body { padding: 22px; }
+.enroll-price { display: flex; align-items: baseline; gap: 8px; margin-bottom: 16px; }
+.price-now { font-size: 30px; font-weight: 900; letter-spacing: -0.02em; }
+.enroll-body .btn { margin-bottom: 10px; }
+.enroll-includes { margin-top: 18px; border-top: 1px solid var(--border); padding-top: 16px; display: grid; gap: 9px; }
+.enroll-includes li { font-size: 13px; color: var(--text-2); display: flex; align-items: center; gap: 8px; }
+
+/* ---------- Layout ---------- */
+.course-body-section { padding-top: 56px; }
+.course-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+  align-items: start;
+}
+.course-main { display: grid; gap: 26px; min-width: 0; }
+.block { padding: 28px; }
+.block-title { font-size: 21px; margin-bottom: 18px; }
+.block-head-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+.block-head-row .block-title { margin-bottom: 0; }
+
+/* ---------- Outcomes / requirements ---------- */
+.outcomes, .requirements { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; }
+.outcomes li, .requirements li { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; color: var(--text-2); }
+.check {
+  flex-shrink: 0;
+  width: 20px; height: 20px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--primary-dim);
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 900;
+  margin-top: 2px;
+}
+
+/* ---------- Curriculum accordion ---------- */
+.curriculum { display: grid; gap: 10px; }
+.curriculum-item { border: 1px solid var(--border); border-radius: 12px; background: var(--bg-soft); overflow: hidden; }
+.curriculum-head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 18px;
+  background: transparent;
+  border: 0;
+  color: var(--text);
+  text-align: left;
+  transition: background 0.2s;
+}
+.curriculum-head:hover { background: var(--surface-2); }
+.curriculum-num { font-size: 12px; font-weight: 800; color: var(--primary); letter-spacing: 1px; }
+.curriculum-name { font-weight: 700; font-size: 14.5px; flex: 1; }
+.curriculum-count { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.curriculum-arrow { color: var(--muted); transition: transform 0.25s; font-size: 13px; }
+.curriculum-item.open .curriculum-arrow { transform: rotate(180deg); }
+.curriculum-body { display: none; border-top: 1px solid var(--border); }
+.curriculum-item.open .curriculum-body { display: block; animation: fadeIn 0.25s ease; }
+.curriculum-body ul { padding: 6px 0; }
+.curriculum-body li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 9px 18px;
+  font-size: 13.5px;
+  color: var(--text-2);
+}
+.curriculum-body li:hover { background: var(--surface-2); color: var(--text); }
+.lesson-num {
+  width: 22px; height: 22px;
+  display: grid; place-items: center;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--muted);
+  background: var(--surface-3);
+  flex-shrink: 0;
+}
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* ---------- Description ---------- */
+.description p { color: var(--text-2); font-size: 14.5px; margin-bottom: 14px; }
+.description p:last-child { margin-bottom: 0; }
+
+/* ---------- Instructor ---------- */
+.instructor-row { display: flex; align-items: center; gap: 18px; margin-bottom: 16px; flex-wrap: wrap; }
+.instructor-main { flex: 1; min-width: 200px; }
+.instructor-main h3 { font-size: 18px; }
+.instructor-role { color: var(--muted); font-size: 13px; margin-top: 2px; }
+.instructor-stats { display: flex; gap: 18px; margin-top: 10px; flex-wrap: wrap; }
+.instructor-stats span { font-size: 12.5px; color: var(--muted); }
+.instructor-stats b { color: var(--text); }
+.instructor-bio { color: var(--text-2); font-size: 14px; border-top: 1px solid var(--border); padding-top: 16px; }
+
+/* ---------- Reviews ---------- */
+.reviews { display: grid; gap: 0; }
+.review {
+  display: flex;
+  gap: 14px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+.review:first-child { padding-top: 0; }
+.review:last-child { border-bottom: 0; padding-bottom: 0; }
+.review-main { flex: 1; min-width: 0; }
+.review-top { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.review-top .rating-stars { font-size: 12px; }
+.review-date { color: var(--muted-2); font-size: 12px; margin-left: auto; }
+.review p { color: var(--text-2); font-size: 14px; }
+
+.review-form { margin-top: 24px; border-top: 1px solid var(--border); padding-top: 22px; }
+.review-form h3 { font-size: 16px; margin-bottom: 14px; }
+.review-form form { display: grid; gap: 12px; }
+.review-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+/* ---------- Sidebar ---------- */
+.course-side { display: grid; gap: 20px; position: sticky; top: 92px; }
+.side-card { padding: 22px; }
+.side-card h3 { font-size: 15px; margin-bottom: 14px; }
+.side-list { display: grid; gap: 10px; }
+.side-list li { font-size: 13.5px; color: var(--text-2); display: flex; align-items: center; gap: 9px; }
+.related-list { display: grid; gap: 12px; }
+.related-item { display: flex; gap: 12px; align-items: center; padding: 10px; border-radius: 12px; border: 1px solid transparent; transition: all 0.2s; }
+.related-item:hover { border-color: var(--border-strong); background: var(--bg-soft); }
+.related-thumb { width: 64px; height: 42px; border-radius: 8px; background-size: cover; background-position: center; flex-shrink: 0; }
+.related-item b { display: block; font-size: 12.5px; line-height: 1.35; }
+.related-item small { color: var(--muted); font-size: 11px; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .course-hero-grid { grid-template-columns: 1fr; }
+  .enroll-card { position: static; }
+  .course-layout { grid-template-columns: 1fr; }
+  .course-side { position: static; grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 700px) {
+  .outcomes, .requirements { grid-template-columns: 1fr; }
+  .review-form-row { grid-template-columns: 1fr; }
+  .course-side { grid-template-columns: 1fr; }
+  .block { padding: 22px; }
+  .curriculum-count { display: none; }
+}
