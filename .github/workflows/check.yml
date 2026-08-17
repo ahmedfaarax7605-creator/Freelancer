@@ -1,0 +1,39 @@
+name: CI — Static Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required project files exist
+        run: |
+          for f in \
+            index.html \
+            README.md \
+            .gitignore \
+            css/style.css \
+            js/main.js \
+            js/courses.js \
+            js/navigation.js \
+            pages/courses.html \
+            pages/course-details.html \
+            pages/instructors.html \
+            pages/about.html \
+            pages/pricing.html \
+            pages/dashboard.html \
+            pages/contact.html \
+            scripts/check_links.py; do
+            test -f "$f" || { echo "Missing required file: $f"; exit 1; }
+          done
+          echo "All required files present."
+
+      - name: Verify all internal links and assets resolve
+        run: python3 scripts/check_links.py
