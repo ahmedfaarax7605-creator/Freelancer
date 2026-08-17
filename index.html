@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TradeCode Academy — Learn skills, build projects and shape your future with practical online courses in web development, programming, data science, databases, DevOps, UI/UX and cybersecurity.">
+  <title>TradeCode Academy | Learn Skills. Build Projects. Shape Your Future.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body data-page="home">
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">TC</span>
+        <span>TradeCode <em style="font-style:normal;color:var(--primary)">Academy</em></span>
+      </a>
+      <button class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="pages/courses.html" data-nav="courses">Courses</a>
+        <a href="pages/instructors.html" data-nav="instructors">Instructors</a>
+        <a href="pages/about.html" data-nav="about">About</a>
+        <a href="pages/pricing.html" data-nav="pricing">Pricing</a>
+        <a href="pages/dashboard.html" data-nav="dashboard">Dashboard</a>
+        <a href="pages/contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+        <button class="btn btn-outline btn-sm" data-modal="login">Log in</button>
+        <button class="btn btn-primary btn-sm" data-modal="register">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">TradeCode Academy — Modern E-Learning</span>
+        <h1>Learn Skills. <span>Build Projects.</span><br>Shape Your Future.</h1>
+        <p>Master web development, programming, data and security with practical, project-based courses designed by expert instructors — and turn knowledge into real-world skills.</p>
+
+        <form class="hero-search" id="heroSearch" role="search">
+          <input type="search" name="q" placeholder="Search courses, e.g. JavaScript, SQL, Kubernetes…" aria-label="Search courses">
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <div class="hero-actions">
+          <a href="pages/courses.html" class="btn btn-primary btn-large">Browse Courses →</a>
+          <a href="#featured" class="btn btn-ghost btn-large">Start Learning</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><b>120+</b><span>Courses</span></div>
+          <div><b>18K+</b><span>Students</span></div>
+          <div><b>4.9/5</b><span>Avg. rating</span></div>
+          <div><b>50+</b><span>Instructors</span></div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card">
+          <div class="hero-card-head">
+            <span>Your learning progress</span>
+            <b class="up">▲ 24% this week</b>
+          </div>
+          <div class="hero-bars">
+            <div class="bar" style="height:34%"></div>
+            <div class="bar" style="height:48%"></div>
+            <div class="bar" style="height:42%"></div>
+            <div class="bar" style="height:64%"></div>
+            <div class="bar" style="height:58%"></div>
+            <div class="bar" style="height:78%"></div>
+            <div class="bar active" style="height:92%"></div>
+          </div>
+          <div class="hero-card-foot"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+          <div class="hero-mini">
+            <span class="avatar avatar-md av-programming">JS</span>
+            <div><b>JavaScript: From Zero to Advanced</b><small>Lesson 18 of 42 · 75% complete</small></div>
+            <strong>75%</strong>
+          </div>
+        </div>
+        <div class="hero-float-card">
+          <span class="float-ico">🎓</span>
+          <div><b>Certificate earned</b><small>Git & GitHub Mastery</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORIES ============ -->
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Explore by topic</span>
+            <h2>Browse categories</h2>
+            <p>Seven focused tracks to help you build a complete, in-demand skill stack.</p>
+          </div>
+          <a href="pages/courses.html" class="btn btn-outline">All courses →</a>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED COURSES ============ -->
+    <section class="section section-alt" id="featured">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Hand-picked</span>
+            <h2>Featured courses</h2>
+            <p>The courses our students are loving right now — project-based and beginner friendly.</p>
+          </div>
+          <a href="pages/courses.html" class="btn btn-outline">View all →</a>
+        </div>
+        <div class="course-grid" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ WHY LEARN WITH US ============ -->
+    <section class="section why-section">
+      <div class="container">
+        <div class="section-head center">
+          <div>
+            <span class="eyebrow">Why TradeCode</span>
+            <h2>Why learn with us</h2>
+            <p>We built TradeCode around one idea: you learn best when you build real things.</p>
+          </div>
+        </div>
+        <div class="why-grid">
+          <article class="why-card card reveal">
+            <div class="why-icon">🛠️</div>
+            <h3>Practical projects</h3>
+            <p>Every course ends with real projects you can add to your portfolio — not just theory.</p>
+          </article>
+          <article class="why-card card reveal">
+            <div class="why-icon">🧑‍🏫</div>
+            <h3>Expert instructors</h3>
+            <p>Learn from professionals who work in the field and teach with real-world experience.</p>
+          </article>
+          <article class="why-card card reveal">
+            <div class="why-icon">⏱️</div>
+            <h3>Flexible learning</h3>
+            <p>Study at your own pace on any device — lessons are short, focused and replayable.</p>
+          </article>
+          <article class="why-card card reveal">
+            <div class="why-icon">📜</div>
+            <h3>Certificates</h3>
+            <p>Earn a shareable certificate for every course you complete and showcase your skills.</p>
+          </article>
+          <article class="why-card card reveal">
+            <div class="why-icon">🌱</div>
+            <h3>Beginner-friendly</h3>
+            <p>Start from zero with clear, step-by-step lessons that assume nothing.</p>
+          </article>
+          <article class="why-card card reveal">
+            <div class="why-icon">💬</div>
+            <h3>Supportive community</h3>
+            <p>Ask questions, share projects and grow alongside thousands of fellow learners.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POPULAR COURSES ============ -->
+    <section class="section section-alt" id="popular">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Most enrolled</span>
+            <h2>Popular courses</h2>
+            <p>Thousands of students are learning these skills right now. Join them.</p>
+          </div>
+          <a href="pages/pricing.html" class="btn btn-outline">See pricing →</a>
+        </div>
+        <div class="course-grid" id="popularGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="cta-band">
+      <div class="container cta-inner">
+        <div>
+          <span class="eyebrow">Start today</span>
+          <h2>Ready to build your next skill?</h2>
+          <p>Join 18,000+ learners building real projects with TradeCode Academy.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="pages/courses.html" class="btn btn-primary btn-large">Explore Courses</a>
+          <a href="pages/pricing.html" class="btn btn-outline btn-large">View Plans</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-mark">TC</span> TradeCode <span style="color:var(--primary)">Academy</span></a>
+        <p>Modern, project-based education for developers, designers and security professionals.</p>
+        <div class="socials">
+          <a href="#" aria-label="GitHub">GH</a>
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+          <a href="#" aria-label="YouTube">YT</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="pages/courses.html">Courses</a>
+        <a href="pages/instructors.html">Instructors</a>
+        <a href="pages/pricing.html">Pricing</a>
+        <a href="pages/dashboard.html">Dashboard</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="pages/about.html">About us</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/contact.html#faq">FAQ</a>
+        <a href="pages/course-details.html?id=javascript-zero-to-advanced">Sample course</a>
+      </div>
+      <div class="footer-news">
+        <h4>Newsletter</h4>
+        <p>Get new courses and learning tips in your inbox. No spam.</p>
+        <form class="news-form">
+          <input type="email" placeholder="Your email address" required aria-label="Email address">
+          <button type="submit" aria-label="Subscribe">→</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="js-year">2026</span> TradeCode Academy. All rights reserved.</span>
+      <span>Learn smarter. Build better.</span>
+    </div>
+  </footer>
+
+  <!-- Auth modal (demo UI) -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">×</button>
+      <div class="modal-logo">TC</div>
+      <h2 id="modalTitle">Create your account</h2>
+      <p id="modalText">Start your learning journey today.</p>
+      <form id="authForm">
+        <div class="field"><input type="text" id="nameField" placeholder="Full name" required></div>
+        <div class="field"><input type="email" placeholder="Email address" required></div>
+        <div class="field"><input type="password" placeholder="Password (min. 6 characters)" required minlength="6"></div>
+        <button class="btn btn-primary btn-block" type="submit" id="authSubmit">Create Account</button>
+      </form>
+      <small class="demo-note">Demo UI — connect this form to your backend/auth service.</small>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/courses.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
